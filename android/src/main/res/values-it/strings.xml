@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="BOTTOM_BAR_events">Eventi</string>
+    <string name="BOTTOM_BAR_about">Chi Siamo</string>
+    <string name="BOTTOM_BAR_photo">Foto</string>
+    <string name="BOTTOM_BAR_contacts">Contatti</string>
+    <string name="EVENTS_next">Prossimi Eventi</string>
+    <string name="EVENTS_past">Eventi Passati</string>
+    <string name="ABOUT_organizers">Organizzatori</string>
+</resources>
