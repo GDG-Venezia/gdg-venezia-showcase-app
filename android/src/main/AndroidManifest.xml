@@ -8,7 +8,9 @@
             android:name=".MyApplication"
             android:allowBackup="true"
             android:supportsRtl="true"
-            android:theme="@style/AppTheme" tools:ignore="GoogleAppIndexingWarning">
+            android:theme="@style/AppTheme"
+            android:label="Showcase KMPP"
+            tools:ignore="GoogleAppIndexingWarning">
 
         <activity
                 android:name=".MainActivity"

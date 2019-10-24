@@ -45,10 +45,11 @@ class RepositoryImpl(private val api: Api): Repository {
         )
          */
 
-        return api.getPhotos().map { PhotoModel(
+        val photos = api.getPhotos()
+        return photos.map { PhotoModel(
                 title = it.title,
                 url = it.url,
-                tags = it.tags ?: emptyList()
+                tags = emptyList()
         ) }
     }
 

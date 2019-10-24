@@ -1,5 +1,6 @@
 package com.github.gdgvenezia
 
+import com.github.gdgvenezia.coroutines.CustomMainScope
 import com.github.gdgvenezia.data.Api
 import com.github.gdgvenezia.presentation.events.TeamPresenter
 import com.github.gdgvenezia.data.RepositoryImpl
@@ -34,7 +35,10 @@ object ServiceLocator {
         get() = TeamPresenter(GetTeamUseCase(repository))
 
     val photoPresenter: PhotoPresenter
-        get() = PhotoPresenter(GetPhotoUseCase(repository))
+        get() = PhotoPresenter(
+                getPhotoUseCase = GetPhotoUseCase(repository = repository),
+                mainScope = CustomMainScope()
+        )
 
     val socialPresenter: SocialPresenter
         get() = SocialPresenter(GetSocialLinkListUseCase(repository))

@@ -1,11 +1,12 @@
 apply plugin: "kotlin-multiplatform"
 apply plugin: "com.android.application"
+apply plugin: 'kotlin-kapt'
 
 android {
     compileSdkVersion 28
 
     defaultConfig {
-        applicationId "org.example.kotlin.multiplatform.app"
+        applicationId "com.github.gdgvenezia.showcase"
         minSdkVersion 21
         targetSdkVersion 28
         versionCode 1
@@ -70,6 +71,8 @@ dependencies {
     implementation Libs.recyclerview
     implementation Libs.material
     implementation Libs.constraintlayout
+    implementation Libs.glide
+    kapt Libs.glideProcessor
 
     implementation Libs.kotlinStdlib
 
@@ -82,4 +85,5 @@ dependencies {
     testImplementation Libs.kotlinTestJunit
     testImplementation Libs.junit
     testImplementation Libs.mockitoKotlin
+
 }

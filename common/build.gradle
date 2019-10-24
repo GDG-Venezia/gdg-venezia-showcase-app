@@ -73,6 +73,7 @@ kotlin {
                 api Libs.junit
                 api Libs.kotlinTestJunit
                 api Libs.kotlinTest
+                api Libs.ktorClientApache
             }
         }
 

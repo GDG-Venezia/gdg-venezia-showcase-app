@@ -3,7 +3,6 @@ package com.github.gdgvenezia.coroutines.web
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 import kotlinx.html.js.onClickFunction
-import org.example.kotlin.multiplatform.repository.NetworkRepository
 import react.RBuilder
 import react.RComponent
 import react.RHandler

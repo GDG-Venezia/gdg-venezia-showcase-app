@@ -5,13 +5,15 @@ import com.github.gdgvenezia.presentation.BaseView
 import com.github.gdgvenezia.domain.Result
 import com.github.gdgvenezia.domain.entities.PhotoModel
 import com.github.gdgvenezia.domain.usecases.GetPhotoUseCase
+import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 
 /**
  * @author Andrea Maglie
  */
-class PhotoPresenter constructor(private val getPhotoUseCase: GetPhotoUseCase): BasePresenter<PhotoView>() {
+class PhotoPresenter constructor(private val getPhotoUseCase: GetPhotoUseCase,
+                                 private val mainScope: CoroutineScope): BasePresenter<PhotoView>(), CoroutineScope by mainScope {
 
     override fun onViewAttached(view: PhotoView) {
         view.renderLoading(true)
@@ -19,7 +21,7 @@ class PhotoPresenter constructor(private val getPhotoUseCase: GetPhotoUseCase): 
     }
 
     private fun loadPhotos() {
-        GlobalScope.launch {
+        launch {
             val result = getPhotoUseCase.execute(Unit)
             view?.renderLoading(false)
             when (result) {

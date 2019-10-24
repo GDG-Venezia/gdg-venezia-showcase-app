@@ -4,7 +4,6 @@ import com.github.gdgvenezia.domain.entities.EventListModel
 import com.github.gdgvenezia.presentation.BasePresenter
 import com.github.gdgvenezia.presentation.BaseView
 import com.github.gdgvenezia.domain.Result
-import com.github.gdgvenezia.domain.entities.EventModel
 import com.github.gdgvenezia.domain.usecases.GetEventListUseCase
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
