@@ -1,4 +1,4 @@
-package org.konan.multiplatform
+package com.github.gdgvenezia.showcase
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -12,9 +12,9 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.RecyclerView
 import com.github.gdgvenezia.ServiceLocator
 import com.github.gdgvenezia.domain.entities.TeamMemberModel
-import com.github.gdgvenezia.presentation.events.TeamView
+import com.github.gdgvenezia.presentation.team.TeamView
 import com.google.android.material.snackbar.Snackbar
-import org.konan.multiplatform.adapter.TeamAdapter
+import com.github.gdgvenezia.showcase.adapter.TeamAdapter
 
 class AboutFragment : Fragment(), TeamView {
 

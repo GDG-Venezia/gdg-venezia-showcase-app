@@ -1,4 +1,4 @@
-package org.konan.multiplatform
+package com.github.gdgvenezia.showcase
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -12,7 +12,7 @@ import com.github.gdgvenezia.ServiceLocator
 import com.github.gdgvenezia.domain.entities.SocialLinkModel
 import com.github.gdgvenezia.presentation.social.SocialView
 import com.google.android.material.snackbar.Snackbar
-import org.konan.multiplatform.adapter.ContactsAdapter
+import com.github.gdgvenezia.showcase.adapter.ContactsAdapter
 
 class ContactsFragment : Fragment(), SocialView {
 

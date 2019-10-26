@@ -1,4 +1,4 @@
-package org.konan.multiplatform
+package com.github.gdgvenezia.showcase
 
 import android.app.Application
 

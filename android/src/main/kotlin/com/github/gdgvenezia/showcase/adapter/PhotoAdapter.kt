@@ -1,4 +1,4 @@
-package org.konan.multiplatform.adapter;
+package com.github.gdgvenezia.showcase.adapter;
 
 import android.graphics.drawable.ColorDrawable
 import android.view.LayoutInflater
@@ -9,7 +9,7 @@ import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.github.gdgvenezia.domain.entities.PhotoModel
-import org.konan.multiplatform.R
+import com.github.gdgvenezia.showcase.R
 
 class PhotoAdapter(var items: List<PhotoModel>) : RecyclerView.Adapter<PhotoAdapter.ViewHolder>() {
 

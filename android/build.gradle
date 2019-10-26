@@ -81,9 +81,11 @@ dependencies {
     implementation Libs.ktorClientAndroid
     implementation Libs.ktorClientJsonJvm
 
+    implementation Libs.androidFragmentTesting
+
     testImplementation Libs.kotlinTest
     testImplementation Libs.kotlinTestJunit
     testImplementation Libs.junit
     testImplementation Libs.mockitoKotlin
-
+    testImplementation Libs.androidTestRunner
 }

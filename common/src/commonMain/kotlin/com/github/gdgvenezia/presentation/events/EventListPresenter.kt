@@ -1,17 +1,17 @@
 package com.github.gdgvenezia.presentation.events
 
-import com.github.gdgvenezia.domain.entities.EventListModel
-import com.github.gdgvenezia.presentation.BasePresenter
-import com.github.gdgvenezia.presentation.BaseView
 import com.github.gdgvenezia.domain.Result
 import com.github.gdgvenezia.domain.usecases.GetEventListUseCase
+import com.github.gdgvenezia.presentation.BasePresenter
+import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 
 /**
  * @author Andrea Maglie
  */
-class EventListPresenter constructor(private val getEventListUseCase: GetEventListUseCase): BasePresenter<EventListView>() {
+class EventListPresenter constructor(private val getEventListUseCase: GetEventListUseCase,
+                                     private val mainScope: CoroutineScope): BasePresenter<EventListView>(), CoroutineScope by mainScope {
 
     override fun onViewAttached(view: EventListView) {
         view.renderLoading(true)
@@ -19,7 +19,7 @@ class EventListPresenter constructor(private val getEventListUseCase: GetEventLi
     }
 
     private fun getEventList() {
-        GlobalScope.launch {
+        launch {
             val result = getEventListUseCase.execute(Unit)
             view?.renderLoading(false)
             when (result) {
@@ -31,8 +31,3 @@ class EventListPresenter constructor(private val getEventListUseCase: GetEventLi
 }
 
 
-interface EventListView: BaseView {
-
-    fun renderEventList(eventList: EventListModel)
-
-}

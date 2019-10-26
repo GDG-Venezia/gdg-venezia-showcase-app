@@ -1,4 +1,4 @@
-package org.konan.multiplatform
+package com.github.gdgvenezia.showcase
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -15,7 +15,7 @@ import com.github.gdgvenezia.ServiceLocator
 import com.github.gdgvenezia.domain.entities.PhotoModel
 import com.github.gdgvenezia.presentation.photos.PhotoView
 import com.google.android.material.snackbar.Snackbar
-import org.konan.multiplatform.adapter.PhotoAdapter
+import com.github.gdgvenezia.showcase.adapter.PhotoAdapter
 
 class PhotoFragment : Fragment(), PhotoView {
 

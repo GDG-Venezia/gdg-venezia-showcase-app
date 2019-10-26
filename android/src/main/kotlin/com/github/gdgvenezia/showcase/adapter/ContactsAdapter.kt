@@ -1,4 +1,4 @@
-package org.konan.multiplatform.adapter;
+package com.github.gdgvenezia.showcase.adapter;
 
 import android.content.Intent
 import android.graphics.drawable.Drawable
@@ -11,7 +11,7 @@ import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.github.gdgvenezia.domain.entities.SocialLinkModel
 import com.google.android.material.card.MaterialCardView
-import org.konan.multiplatform.R
+import com.github.gdgvenezia.showcase.R
 import android.content.Intent.ACTION_VIEW
 import android.net.Uri
 

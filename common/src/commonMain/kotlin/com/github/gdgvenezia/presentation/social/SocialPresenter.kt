@@ -9,13 +9,15 @@ import com.github.gdgvenezia.domain.entities.TeamMemberModel
 import com.github.gdgvenezia.domain.usecases.GetPhotoUseCase
 import com.github.gdgvenezia.domain.usecases.GetSocialLinkListUseCase
 import com.github.gdgvenezia.domain.usecases.GetTeamUseCase
+import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 
 /**
  * @author Andrea Maglie
  */
-class SocialPresenter constructor(private val getSocialLinkListUseCase: GetSocialLinkListUseCase): BasePresenter<SocialView>() {
+class SocialPresenter constructor(private val getSocialLinkListUseCase: GetSocialLinkListUseCase,
+                                  private val mainScope: CoroutineScope): BasePresenter<SocialView>(), CoroutineScope by mainScope{
 
     override fun onViewAttached(view: SocialView) {
         view.renderLoading(true)
@@ -23,7 +25,7 @@ class SocialPresenter constructor(private val getSocialLinkListUseCase: GetSocia
     }
 
     private fun getTeam() {
-        GlobalScope.launch {
+        launch {
             val result = getSocialLinkListUseCase.execute(Unit)
             view?.renderLoading(false)
             when (result) {

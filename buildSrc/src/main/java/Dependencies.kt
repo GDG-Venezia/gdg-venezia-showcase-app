@@ -111,4 +111,7 @@ object Libs {
     const val logbackClassic = "ch.qos.logback:logback-classic:${Versions.logback}"
     const val mockitoKotlin = "com.nhaarman.mockitokotlin2:mockito-kotlin:${Versions.mockitoKotlin}"
     const val squashH2 = "org.jetbrains.squash:squash-h2:${Versions.squash}"
+
+    const val androidFragmentTesting = "androidx.fragment:fragment-testing:1.1.0"
+    const val androidTestRunner = "androidx.test:runner:1.1.0"
 }

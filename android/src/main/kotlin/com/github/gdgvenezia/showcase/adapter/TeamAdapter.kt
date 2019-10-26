@@ -1,4 +1,4 @@
-package org.konan.multiplatform.adapter;
+package com.github.gdgvenezia.showcase.adapter;
 
 import android.annotation.SuppressLint
 import android.view.LayoutInflater
@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.github.gdgvenezia.domain.entities.TeamMemberModel
-import org.konan.multiplatform.R
+import com.github.gdgvenezia.showcase.R
 
 class TeamAdapter(var items: List<TeamMemberModel>) : RecyclerView.Adapter<TeamAdapter.ViewHolder>() {
 
