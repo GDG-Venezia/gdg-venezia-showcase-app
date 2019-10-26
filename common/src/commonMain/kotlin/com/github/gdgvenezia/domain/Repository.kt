@@ -9,9 +9,9 @@ import com.github.gdgvenezia.domain.entities.TeamMemberModel
  * @author Andrea Maglie
  */
 interface Repository {
-    fun getEventList(): List<EventModel>
-    fun getPastEventList(): List<EventModel>
-    fun getFutureEventList(): List<EventModel>
+    suspend fun getEventList(): List<EventModel>
+    suspend fun getPastEventList(): List<EventModel>
+    suspend fun getFutureEventList(): List<EventModel>
     fun getTeamMemeberList(): List<TeamMemberModel>
     suspend fun getPhotoList(): List<PhotoModel>
     fun getSocialLinkList(): List<SocialLinkModel>

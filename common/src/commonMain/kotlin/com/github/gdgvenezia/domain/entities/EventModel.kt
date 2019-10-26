@@ -8,7 +8,6 @@ data class EventModel(
         val date: EventDate
 )
 
-
 data class EventDate(
         val day: Int,
         val month: Int,

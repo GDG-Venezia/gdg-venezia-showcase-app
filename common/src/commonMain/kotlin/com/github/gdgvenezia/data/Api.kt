@@ -52,6 +52,26 @@ class Api {
         return client.get<PhotoResponseModel>("$ENDPOINT/photos").items
     }
 
+    suspend fun getEvents(): List<EventResponseItemModel> {
+        return client.get<EventListResponseModel>("$ENDPOINT/events").items
+    }
+
+    suspend fun getPastEvents(): List<EventResponseItemModel> {
+        return client.get<EventListResponseModel>("$ENDPOINT/events/past").items
+    }
+
+    suspend fun getFutureEvents(): List<EventResponseItemModel> {
+        return client.get<EventListResponseModel>("$ENDPOINT/events/future").items
+    }
+
+    suspend fun getTeam(): List<TeamMemberResponseModel> {
+        return client.get<TeamListResponseModel>("$ENDPOINT/team").items
+    }
+
+    suspend fun getSocialLinks(): List<SocialLinkResponseModel> {
+        return client.get<SocialListResponseModel>("$ENDPOINT/social").items
+    }
+
     suspend fun getPhotosJson(): String {
         return client.get("$ENDPOINT/photos")
     }
@@ -61,6 +81,22 @@ class Api {
 @Serializable
 data class PhotoResponseModel(
     @SerialName("items") val items: List<PhotoResponseItemModel>
+)
+
+
+@Serializable
+data class EventListResponseModel(
+        @SerialName("items") val items: List<EventResponseItemModel>
+)
+
+@Serializable
+data class TeamListResponseModel(
+        @SerialName("items") val items: List<TeamMemberResponseModel>
+)
+
+@Serializable
+data class SocialListResponseModel(
+        @SerialName("items") val items: List<SocialLinkResponseModel>
 )
 
 /*
@@ -86,3 +122,29 @@ data class PhotoResponseItemModel(
         val url: String
         //val tags: List<String>?
 )
+
+@Serializable
+data class EventResponseItemModel(
+        val title: String,
+        val time: Long,
+        val utcOffset: Long
+)
+
+@Serializable
+data class TeamMemberResponseModel(
+        val firstname: String,
+        val lastname: String,
+        val pictureUrl: String,
+        val shortDescription: String,
+        val longDescription: String,
+        val twitterUrl: String,
+        val linkedinUrl: String
+)
+
+@Serializable
+data class SocialLinkResponseModel(
+        val title: String,
+        val code: String,
+        val url: String
+)
+

@@ -39,8 +39,8 @@ fun hello() = functionalComponent<ApplicationProps> { props ->
                 onClickFunction = {
                     GlobalScope.launch {
                         console.log(props)
-                        val name = props.networkRepository.getGreeting("web")
-                        setName(name.message)
+                        //val name = props.networkRepository.getGreeting("web")
+                        //setName(name.message)
                     }
                 }
             }
@@ -49,7 +49,7 @@ fun hello() = functionalComponent<ApplicationProps> { props ->
 }
 
 external interface ApplicationProps : RProps {
-    var networkRepository: NetworkRepository
+    //var networkRepository: NetworkRepository
 }
 
 fun RBuilder.app(handler: RHandler<ApplicationProps>) = child(Application::class, handler)

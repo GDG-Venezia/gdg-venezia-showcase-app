@@ -13,27 +13,18 @@ import com.github.gdgvenezia.domain.entities.TeamMemberModel
  */
 class RepositoryImpl(private val api: Api): Repository {
 
-    private val event1 = EventModel(title = "Evento 1", date = EventDate(30, 1, 2019, hour = 18, minute = 30, epochInSeconds = 1548869400))
-    private val event3 = EventModel(title = "Evento 3", date = EventDate(10, 9, 2019, hour = 19, epochInSeconds = 1568134800))
-    private val event2 = EventModel(title = "Evento 2", date = EventDate(5, 6, 2019, hour = 21, epochInSeconds = 1559761200))
+    private val eventMapper by lazy { MeetupEventResponseMapper() }
 
-    override fun getEventList(): List<EventModel> {
-        return listOf(
-                event3,
-                event2,
-                event1
-        )
+    override suspend fun getEventList(): List<EventModel> {
+        return api.getEvents().map { eventMapper.map(it) }
     }
 
-    override fun getPastEventList(): List<EventModel> {
-        return listOf(
-                event2,
-                event1
-        )
+    override suspend fun getPastEventList(): List<EventModel> {
+        return api.getPastEvents().map { eventMapper.map(it) }
     }
 
-    override fun getFutureEventList(): List<EventModel> {
-        return listOf(event3)
+    override suspend  fun getFutureEventList(): List<EventModel> {
+        return api.getFutureEvents().map { eventMapper.map(it) }
     }
 
     override suspend fun getPhotoList(): List<PhotoModel> {
