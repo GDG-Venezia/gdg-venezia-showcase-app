@@ -29,11 +29,8 @@ class EventsAdapter(var items: List<EventModel>) : RecyclerView.Adapter<EventsAd
             // TODO: change it
             eventSubtitle.text = "Subtitle"
 
-            dayText.text = item.date.day.toString()
-
-            val date = Date(item.date.epochInSeconds * 1000)
-            val formatter = SimpleDateFormat("MMM", Locale.getDefault())
-            monthText.text = formatter.format(date)
+            dayText.text = item.day.toString()
+            monthText.text = item.monthShort
         }
     }
 }

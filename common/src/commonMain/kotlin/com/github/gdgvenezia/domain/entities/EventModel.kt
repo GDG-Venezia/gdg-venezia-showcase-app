@@ -5,14 +5,8 @@ package com.github.gdgvenezia.domain.entities
  */
 data class EventModel(
         val title: String,
-        val date: EventDate
-)
-
-data class EventDate(
         val day: Int,
-        val month: Int,
+        val monthShort: String,
         val year: Int,
-        val hour: Int,
-        val minute: Int = 0,
-        val epochInSeconds: Long
+        val description: String
 )

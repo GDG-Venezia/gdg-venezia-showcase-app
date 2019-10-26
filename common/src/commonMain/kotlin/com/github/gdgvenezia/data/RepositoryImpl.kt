@@ -1,9 +1,7 @@
 package com.github.gdgvenezia.data
 
-import com.github.gdgvenezia.data.Api
 import com.github.gdgvenezia.domain.entities.SocialLinkModel
 import com.github.gdgvenezia.domain.Repository
-import com.github.gdgvenezia.domain.entities.EventDate
 import com.github.gdgvenezia.domain.entities.EventModel
 import com.github.gdgvenezia.domain.entities.PhotoModel
 import com.github.gdgvenezia.domain.entities.TeamMemberModel

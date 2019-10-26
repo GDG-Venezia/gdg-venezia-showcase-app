@@ -126,8 +126,17 @@ data class PhotoResponseItemModel(
 @Serializable
 data class EventResponseItemModel(
         val title: String,
-        val time: Long,
-        val utcOffset: Long
+        val date: EventDateResponseModel,
+        val description: String
+)
+
+@Serializable
+data class EventDateResponseModel(
+        @SerialName("day") val day: Int,
+        @SerialName("day_of_week") val dayOfWeek: String,
+        @SerialName("month_short") val monthShort: String,
+        @SerialName("month_full") val monthFull: String,
+        @SerialName("year") val year: Int
 )
 
 @Serializable
