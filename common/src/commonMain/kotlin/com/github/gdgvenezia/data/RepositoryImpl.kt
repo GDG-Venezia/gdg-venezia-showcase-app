@@ -5,10 +5,12 @@ import com.github.gdgvenezia.domain.Repository
 import com.github.gdgvenezia.domain.entities.EventModel
 import com.github.gdgvenezia.domain.entities.PhotoModel
 import com.github.gdgvenezia.domain.entities.TeamMemberModel
+import kotlinx.serialization.UnstableDefault
 
 /**
  * @author Andrea Maglie
  */
+@UnstableDefault
 class RepositoryImpl(private val api: Api): Repository {
 
     private val eventMapper by lazy { MeetupEventResponseMapper() }
@@ -42,85 +44,27 @@ class RepositoryImpl(private val api: Api): Repository {
         ) }
     }
 
-    override fun getTeamMemeberList(): List<TeamMemberModel> {
-        return listOf(
-                TeamMemberModel(
-                    firstname = "Andrea",
-                    lastname = "Maglie",
-                    pictureUrl = "",
-                    shortDescription = "Sed ut perspiciatis unde omnis iste natus error sit voluptatem",
-                    longDescription = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ",
-                    twitterUrl = "https://twitter.com/TechIsFun",
-                    linkedinUrl = ""),
-                TeamMemberModel(
-                        firstname = "Marco",
-                        lastname = "Gomiero",
-                        pictureUrl = "",
-                        shortDescription = "Lorem ipsum",
-                        longDescription = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ",
-                        twitterUrl = "https://twitter.com/marcoGomier",
-                        linkedinUrl = ""),
-                TeamMemberModel(
-                        firstname = "Simone",
-                        lastname = "Formica",
-                        pictureUrl = "",
-                        shortDescription = "Consectetur adipiscing elit",
-                        longDescription = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ",
-                        twitterUrl = "https://twitter.com/SimoneFormica",
-                        linkedinUrl = ""),
-                TeamMemberModel(
-                        firstname = "Omar",
-                        lastname = "Al Bukhari",
-                        pictureUrl = "",
-                        shortDescription = "Excepteur sint occaecat cupidatat non proident",
-                        longDescription = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ",
-                        twitterUrl = "",
-                        linkedinUrl = "https://linkedin.com/in/omar-al-bukhari-01776b111")
-                )
+    override suspend fun getTeamMemeberList(): List<TeamMemberModel> {
+        return api.getTeam().map {
+            TeamMemberModel(
+                    firstname = it.firstname,
+                    lastname = it.lastname,
+                    pictureUrl = it.pictureUrl,
+                    shortDescription = it.shortDescription,
+                    longDescription = it.longDescription,
+                    twitterUrl = it.twitterUrl,
+                    linkedinUrl = it.linkedinUrl
+            )
+        }
     }
 
-    override fun getSocialLinkList(): List<SocialLinkModel> {
-        return listOf(
-                SocialLinkModel(
-                        title = "Facebook",
-                        code = "facebook",
-                        url = "https://www.facebook.com/gdgvenezia"
-                ),
-                SocialLinkModel(
-                        title = "Twitter",
-                        code = "twitter",
-                        url = "https://twitter.com/gdgvenezia"
-                ),
-                SocialLinkModel(
-                        title = "YouTube",
-                        code = "youtube",
-                        url = "https://www.youtube.com/channel/UCnXHsg8plcHc_NuCETV2k6Q"
-                ),
-                SocialLinkModel(
-                        title = "Meetup",
-                        code = "meetup",
-                        url = "https://www.meetup.com/it-IT/GDG-Venezia"
-                ),
-                SocialLinkModel(
-                        title = "Instagram",
-                        code = "instagram",
-                        url = "https://www.instagram.com/gdg_venezia"
-                ),
-                SocialLinkModel(
-                        title = "GitHub",
-                        code = "github",
-                        url = "https://github.com/GDG-Venezia"
-                ),
-                SocialLinkModel(
-                        title = "Telegram",
-                        code = "telegram",
-                        url = "https://telegram.me/joinchat/CrhySAbNTvs7BZACfpQyyQ"
-                ),
-                SocialLinkModel(
-                        title = "Mail",
-                        code = "mail",
-                        url = "mailto:veneziagdg@gmail.com"
-                )
-        )
+    override suspend fun getSocialLinkList(): List<SocialLinkModel> {
+        return api.getSocialLinks().map {
+            SocialLinkModel(
+                    title = it.title,
+                    code = it.code,
+                    url = it.url
+            )
+        }
     }
 }

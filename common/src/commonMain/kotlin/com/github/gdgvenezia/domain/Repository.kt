@@ -12,7 +12,7 @@ interface Repository {
     suspend fun getEventList(): List<EventModel>
     suspend fun getPastEventList(): List<EventModel>
     suspend fun getFutureEventList(): List<EventModel>
-    fun getTeamMemeberList(): List<TeamMemberModel>
+    suspend fun getTeamMemeberList(): List<TeamMemberModel>
     suspend fun getPhotoList(): List<PhotoModel>
-    fun getSocialLinkList(): List<SocialLinkModel>
+    suspend fun getSocialLinkList(): List<SocialLinkModel>
 }

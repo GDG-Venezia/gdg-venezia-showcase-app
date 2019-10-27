@@ -8,6 +8,8 @@ import io.ktor.client.features.logging.LogLevel
 import io.ktor.client.features.logging.Logger
 import io.ktor.client.features.logging.Logging
 import io.ktor.client.request.get
+import io.ktor.client.response.HttpResponse
+import io.ktor.client.response.readText
 import kotlinx.serialization.*
 import kotlinx.serialization.internal.StringDescriptor
 import kotlinx.serialization.json.Json
@@ -19,12 +21,32 @@ import kotlinx.serialization.json.Json
 
 private const val ENDPOINT = "https://thawing-ridge-92338.herokuapp.com"
 
+@UnstableDefault
 class Api {
 
     private val client by lazy {
         HttpClient {
             install(JsonFeature) {
-                serializer = KotlinxSerializer(Json.nonstrict)
+                serializer = KotlinxSerializer(Json.nonstrict).apply {
+
+                    // Events mapper
+                    setMapper(EventListResponseModel::class, EventListResponseModel.serializer())
+                    setMapper(EventResponseItemModel::class, EventResponseItemModel.serializer())
+                    setMapper(EventDateResponseModel::class, EventDateResponseModel.serializer())
+
+                    // Team mapper
+                    setMapper(TeamMemberResponseModel::class, TeamMemberResponseModel.serializer())
+                    setMapper(TeamListResponseModel::class, TeamListResponseModel.serializer())
+
+                    // Social Mapper
+                    setMapper(SocialLinkResponseModel::class, SocialLinkResponseModel.serializer())
+                    setMapper(SocialListResponseModel::class, SocialListResponseModel.serializer())
+
+                    // Photo mapper
+                    setMapper(PhotoResponseModel::class, PhotoResponseModel.serializer())
+                    setMapper(PhotoResponseItemModel::class, PhotoResponseItemModel.serializer())
+
+                }
             }
 
             install(Logging) {
