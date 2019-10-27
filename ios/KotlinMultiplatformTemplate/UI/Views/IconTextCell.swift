@@ -41,22 +41,15 @@ class IconTextCell: UITableViewCell {
         self.labelSubtitle.font = Fonts.get(.regular, size: Fonts.Sizes.normal)
         self.labelDay.font = Fonts.get(.regular, size: Fonts.Sizes.small)
         self.labelMonth.font = Fonts.get(.regular, size: Fonts.Sizes.small)
-
-    }
-    
-    // MARK: TODO: fix
-    func setup(title: String, subtitle: String, event: EventModel) {
-        self.labelTitle.text = title
-        self.labelSubtitle.text = subtitle
         
-        // MARK: TODO: implement
-//        let date = Date(timeIntervalSince1970: TimeInterval(eventDate.epochInSeconds))
-//        let dateFormatter = DateFormatter()
-//        dateFormatter.dateFormat = "MMM"
-//        self.labelMonth.text = dateFormatter.string(from: date)
-//        self.labelDay.text = String(eventDate.day)
-        self.labelDay.text = "TODO"
-            
     }
     
+    func setup(event: EventModel?) {
+        if let singleEvent = event {
+            self.labelTitle.text = singleEvent.title
+            self.labelSubtitle.text = singleEvent.eventDescription.html2String
+            self.labelMonth.text = singleEvent.monthShort
+            self.labelDay.text = String(singleEvent.day)
+        }
+    }
 }

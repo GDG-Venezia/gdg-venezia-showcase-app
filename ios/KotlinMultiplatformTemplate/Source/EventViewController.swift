@@ -86,7 +86,7 @@ extension EventViewController: UITableViewDelegate, UITableViewDataSource {
         }
         
         if event != nil {
-            cell.setup(title: event!.title, subtitle: "Subtitle", event: event!)
+            cell.setup(event: event!)
         }
         
         return cell
@@ -123,12 +123,16 @@ extension EventViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         switch section {
         case 0:
-            return NSLocalizedString("EVENTS_next", comment: "")
+            if !self.futureEvents.isEmpty {
+                return NSLocalizedString("EVENTS_next", comment: "")}
         case 1:
-            return NSLocalizedString("EVENTS_past", comment: "")
+            if !self.pastEvents.isEmpty {
+                return NSLocalizedString("EVENTS_past", comment: "")
+            }
         default:
             return nil
         }
+        return nil
     }
     
     func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
