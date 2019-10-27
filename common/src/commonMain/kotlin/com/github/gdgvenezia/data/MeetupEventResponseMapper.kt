@@ -10,7 +10,7 @@ class MeetupEventResponseMapper {
                 monthShort = t.date.monthShort,
                 year = t.date.year,
                 day = t.date.day,
-                description = t.description
+                eventDescription = t.description
         )
     }
 }

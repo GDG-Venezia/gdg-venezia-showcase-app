@@ -8,5 +8,5 @@ data class EventModel(
         val day: Int,
         val monthShort: String,
         val year: Int,
-        val description: String
+        val eventDescription: String
 )
