@@ -34,6 +34,13 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Product-Sans-Bold-Italic.ttf</string>
+		<string>Product-Sans-Bold.ttf</string>
+		<string>Product-Sans-Italic.ttf</string>
+		<string>Product-Sans-Regular.ttf</string>
+	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

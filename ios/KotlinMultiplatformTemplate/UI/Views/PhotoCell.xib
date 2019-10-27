@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PhotoCell" customModule="iosApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QEa-Z4-P50">
+                    <rect key="frame" x="10" y="10" width="180" height="180"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tPj-iZ-7Kd">
+                            <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="tPj-iZ-7Kd" firstAttribute="leading" secondItem="QEa-Z4-P50" secondAttribute="leading" id="5R1-pa-4RU"/>
+                        <constraint firstAttribute="trailing" secondItem="tPj-iZ-7Kd" secondAttribute="trailing" id="DOy-Re-L7L"/>
+                        <constraint firstItem="tPj-iZ-7Kd" firstAttribute="top" secondItem="QEa-Z4-P50" secondAttribute="top" id="beZ-4k-KFL"/>
+                        <constraint firstAttribute="bottom" secondItem="tPj-iZ-7Kd" secondAttribute="bottom" id="f4f-5F-gxP"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="QEa-Z4-P50" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="ekt-mj-SbN"/>
+                <constraint firstAttribute="bottom" secondItem="QEa-Z4-P50" secondAttribute="bottom" constant="10" id="iLq-Y8-hc4"/>
+                <constraint firstItem="QEa-Z4-P50" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="wCl-6f-s9f"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="QEa-Z4-P50" secondAttribute="trailing" constant="10" id="ySO-Dt-qyv"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="container" destination="QEa-Z4-P50" id="IrZ-Er-c8r"/>
+                <outlet property="imageView" destination="tPj-iZ-7Kd" id="Psn-AJ-YU2"/>
+            </connections>
+            <point key="canvasLocation" x="37.681159420289859" y="34.821428571428569"/>
+        </view>
+    </objects>
+</document>
