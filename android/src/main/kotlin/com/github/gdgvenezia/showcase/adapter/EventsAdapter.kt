@@ -1,13 +1,15 @@
-package com.github.gdgvenezia.showcase;
+package com.github.gdgvenezia.showcase.adapter
 
+import android.os.Build
+import android.text.Html
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.core.text.HtmlCompat.FROM_HTML_MODE_COMPACT
 import androidx.recyclerview.widget.RecyclerView
 import com.github.gdgvenezia.domain.entities.EventModel
-import java.text.SimpleDateFormat
-import java.util.*
+import com.github.gdgvenezia.showcase.R
 
 class EventsAdapter(var items: List<EventModel>) : RecyclerView.Adapter<EventsAdapter.ViewHolder>() {
 
@@ -26,9 +28,14 @@ class EventsAdapter(var items: List<EventModel>) : RecyclerView.Adapter<EventsAd
             val monthText = itemView.findViewById<TextView>(R.id.ITEM_EVENT_month)
 
             eventTitle.text = item.title
-            // TODO: change it
-            eventSubtitle.text = "Subtitle"
-
+            if (item.eventDescription.isNotEmpty()) {
+                eventSubtitle.text = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+                    Html.fromHtml(item.eventDescription, FROM_HTML_MODE_COMPACT)
+                } else {
+                    @Suppress("DEPRECATION")
+                    Html.fromHtml(item.eventDescription)
+                }
+            }
             dayText.text = item.day.toString()
             monthText.text = item.monthShort
         }

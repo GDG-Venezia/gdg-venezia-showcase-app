@@ -13,11 +13,13 @@ import androidx.recyclerview.widget.RecyclerView
 import com.github.gdgvenezia.ServiceLocator
 import com.github.gdgvenezia.domain.entities.EventListModel
 import com.github.gdgvenezia.presentation.events.EventListView
+import com.github.gdgvenezia.showcase.adapter.EventsAdapter
 import com.google.android.material.snackbar.Snackbar
 
 
 class EventsFragment : Fragment(), EventListView {
 
+    private lateinit var progressLayout: ConstraintLayout
     private lateinit var progress: ProgressBar
     private lateinit var pastRecyclerView: RecyclerView
     private lateinit var futureRecyclerView: RecyclerView
@@ -38,6 +40,7 @@ class EventsFragment : Fragment(), EventListView {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        progressLayout = view.findViewById(R.id.EVENTS_progress_layout)
         progress = view.findViewById(R.id.EVENTS_progress)
         pastRecyclerView = view.findViewById(R.id.EVENTS_past_list)
         futureRecyclerView = view.findViewById(R.id.EVENTS_future_list)
@@ -67,15 +70,17 @@ class EventsFragment : Fragment(), EventListView {
     }
 
     override fun renderError(errorMessage: String) {
-       Snackbar.make(mainView, errorMessage, Snackbar.LENGTH_LONG).show()
+        Snackbar.make(mainView, errorMessage, Snackbar.LENGTH_LONG).show()
     }
 
     override fun renderLoading(visible: Boolean) {
         if (visible) {
             listGroup.visibility = View.GONE
+            progressLayout.visibility = View.VISIBLE
             progress.visibility = View.VISIBLE
         } else {
             listGroup.visibility = View.VISIBLE
+            progressLayout.visibility = View.GONE
             progress.visibility = View.GONE
         }
     }
