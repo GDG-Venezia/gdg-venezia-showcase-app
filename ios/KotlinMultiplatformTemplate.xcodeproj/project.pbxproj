@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0AA26E04BAB610A26D678F0B /* libPods-KotlinMultiplatformTemplate.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E445EB74BB67577D01865C1 /* libPods-KotlinMultiplatformTemplate.a */; };
 		114EB423786D9FE9757F0572 /* CustomMainScope.kt in Sources */ = {isa = PBXBuildFile; fileRef = 92C3B1D9B3DD5910641FC255 /* CustomMainScope.kt */; settings = {COMPILER_FLAGS = "-w"; }; };
 		146A74EB7C2C2D8CFFE6E9FB /* defaultNetworkConfig.kt in Sources */ = {isa = PBXBuildFile; fileRef = 0EF511067747BBB966DBAA6B /* defaultNetworkConfig.kt */; settings = {COMPILER_FLAGS = "-w"; }; };
 		1D020DA9B27B82EFA339B960 /* Greeting.kt in Sources */ = {isa = PBXBuildFile; fileRef = D9EF6B60DA949E451A5956D6 /* Greeting.kt */; settings = {COMPILER_FLAGS = "-w"; }; };
@@ -18,6 +17,31 @@
 		68438720D56AC566F9B2C591 /* NetworkRepository.kt in Sources */ = {isa = PBXBuildFile; fileRef = 2871EB1ED68743394430D9B2 /* NetworkRepository.kt */; settings = {COMPILER_FLAGS = "-w"; }; };
 		6A6F8BF402155473FBEDBC86 /* ErrorResponse.kt in Sources */ = {isa = PBXBuildFile; fileRef = D38000A568F5593E932EC460 /* ErrorResponse.kt */; settings = {COMPILER_FLAGS = "-w"; }; };
 		90B4AB2640F0E9CF08176153 /* CustomMainScope.kt in Sources */ = {isa = PBXBuildFile; fileRef = 5EB048F20551F58A758700BE /* CustomMainScope.kt */; settings = {COMPILER_FLAGS = "-w"; }; };
+		9200EEBE82D6D16A30FC331F /* Pods_KotlinMultiplatformTemplate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBCBC080112C095B2C1C520C /* Pods_KotlinMultiplatformTemplate.framework */; };
+		A9CE80CC2365B10E004766CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CE80CB2365B10E004766CA /* AppDelegate.swift */; };
+		A9CE80CF2365B18A004766CA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CE80CE2365B18A004766CA /* Extensions.swift */; };
+		A9CE80D32365B1AB004766CA /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CE80D22365B1AB004766CA /* Fonts.swift */; };
+		A9CE80D52365B1FC004766CA /* DeviceScreenType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CE80D42365B1FC004766CA /* DeviceScreenType.swift */; };
+		A9CE80D72365B205004766CA /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CE80D62365B205004766CA /* Colors.swift */; };
+		A9CE80D92365B2FE004766CA /* IconTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CE80D82365B2FE004766CA /* IconTextCell.swift */; };
+		A9CE80E12365B31D004766CA /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CE80DA2365B31C004766CA /* PhotoCell.swift */; };
+		A9CE80E22365B31D004766CA /* IconTextCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9CE80DB2365B31C004766CA /* IconTextCell.xib */; };
+		A9CE80E32365B31D004766CA /* IconImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CE80DC2365B31D004766CA /* IconImageCell.swift */; };
+		A9CE80E42365B31D004766CA /* SocialCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9CE80DD2365B31D004766CA /* SocialCell.xib */; };
+		A9CE80E52365B31D004766CA /* SocialCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CE80DE2365B31D004766CA /* SocialCell.swift */; };
+		A9CE80E62365B31D004766CA /* PhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9CE80DF2365B31D004766CA /* PhotoCell.xib */; };
+		A9CE80E72365B31D004766CA /* IconImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9CE80E02365B31D004766CA /* IconImageCell.xib */; };
+		A9F2E0CD2365D7A5007CCC70 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9F2E0CC2365D7A4007CCC70 /* Main.storyboard */; };
+		A9F2E0CF2365D7F1007CCC70 /* PhotoCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F2E0CE2365D7F1007CCC70 /* PhotoCollectionViewLayout.swift */; };
+		A9F2E0D12365D806007CCC70 /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F2E0D02365D806007CCC70 /* EventViewController.swift */; };
+		A9F2E0D32365D813007CCC70 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F2E0D22365D813007CCC70 /* AboutViewController.swift */; };
+		A9F2E0D52365D825007CCC70 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F2E0D42365D825007CCC70 /* PhotoViewController.swift */; };
+		A9F2E0D72365D833007CCC70 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F2E0D62365D833007CCC70 /* ContactsViewController.swift */; };
+		A9F2E0DE2365D90B007CCC70 /* Product-Sans-Bold-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A9F2E0D92365D90B007CCC70 /* Product-Sans-Bold-Italic.ttf */; };
+		A9F2E0DF2365D90B007CCC70 /* Product-Sans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A9F2E0DA2365D90B007CCC70 /* Product-Sans-Italic.ttf */; };
+		A9F2E0E02365D90B007CCC70 /* Product-Sans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A9F2E0DB2365D90B007CCC70 /* Product-Sans-Regular.ttf */; };
+		A9F2E0E12365D90B007CCC70 /* Product-Sans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A9F2E0DC2365D90B007CCC70 /* Product-Sans-Bold.ttf */; };
+		A9F2E0E92365DB60007CCC70 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A9F2E0EB2365DB60007CCC70 /* Localizable.strings */; };
 		AE5D58E83754340703D6B8AD /* CustomMainScope.kt in Sources */ = {isa = PBXBuildFile; fileRef = 13FE23183FDE050291130B6E /* CustomMainScope.kt */; settings = {COMPILER_FLAGS = "-w"; }; };
 		B2F772FC50E7D08A7AFF5946 /* NotDagger.kt in Sources */ = {isa = PBXBuildFile; fileRef = 1AF70CB837156181F44432DA /* NotDagger.kt */; settings = {COMPILER_FLAGS = "-w"; }; };
 		BFA05C3203A37D6EC43DDBD8 /* GetHello.kt in Sources */ = {isa = PBXBuildFile; fileRef = 6AB40D71B57F2F8FB383010B /* GetHello.kt */; settings = {COMPILER_FLAGS = "-w"; }; };
@@ -25,9 +49,7 @@
 		DDF4EC6F6218091EC09F89A9 /* Greeting.kt in Sources */ = {isa = PBXBuildFile; fileRef = 4CB6E3A01B90A0F0694FCDE4 /* Greeting.kt */; settings = {COMPILER_FLAGS = "-w"; }; };
 		E12863E04EA7FD33C2D6D536 /* HelloResponse.kt in Sources */ = {isa = PBXBuildFile; fileRef = C914F9507BB8DEB0CC64136C /* HelloResponse.kt */; settings = {COMPILER_FLAGS = "-w"; }; };
 		E66E0608D2DC4B7AC294D513 /* HelloPresenter.kt in Sources */ = {isa = PBXBuildFile; fileRef = 0328CAB91FF045BD7C8BE258 /* HelloPresenter.kt */; settings = {COMPILER_FLAGS = "-w"; }; };
-		FAB5AA262273D1190095C309 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB5AA252273D1190095C309 /* AppDelegate.swift */; };
 		FAB5AA282273D1190095C309 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB5AA272273D1190095C309 /* MainViewController.swift */; };
-		FAB5AA2B2273D1190095C309 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAB5AA292273D1190095C309 /* Main.storyboard */; };
 		FAB5AA2D2273D11A0095C309 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAB5AA2C2273D11A0095C309 /* Assets.xcassets */; };
 		FAB5AA302273D11A0095C309 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAB5AA2E2273D11A0095C309 /* LaunchScreen.storyboard */; };
 		FAB5AA3B2273D11A0095C309 /* KotlinMultiplatformProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB5AA3A2273D11A0095C309 /* KotlinMultiplatformProjectTests.swift */; };
@@ -68,8 +90,34 @@
 		92C3B1D9B3DD5910641FC255 /* CustomMainScope.kt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CustomMainScope.kt; path = ../common/src/jvmMain/kotlin/org/example/kotlin/multiplatform/coroutines/CustomMainScope.kt; sourceTree = "<group>"; };
 		97EDEB862924ABD409382E83 /* Pods-KotlinMultiplatformTemplate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KotlinMultiplatformTemplate.release.xcconfig"; path = "Target Support Files/Pods-KotlinMultiplatformTemplate/Pods-KotlinMultiplatformTemplate.release.xcconfig"; sourceTree = "<group>"; };
 		9C031104080AF4FB2C2D927B /* Pods-KotlinMultiplatformTemplate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KotlinMultiplatformTemplate.debug.xcconfig"; path = "Target Support Files/Pods-KotlinMultiplatformTemplate/Pods-KotlinMultiplatformTemplate.debug.xcconfig"; sourceTree = "<group>"; };
-		9E445EB74BB67577D01865C1 /* libPods-KotlinMultiplatformTemplate.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KotlinMultiplatformTemplate.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6350958C159FC766A28AEE5 /* NetworkDataSource.kt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = NetworkDataSource.kt; path = ../common/src/commonMain/kotlin/org/example/kotlin/multiplatform/data/NetworkDataSource.kt; sourceTree = "<group>"; };
+		A9CE80CB2365B10E004766CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A9CE80CE2365B18A004766CA /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		A9CE80D22365B1AB004766CA /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		A9CE80D42365B1FC004766CA /* DeviceScreenType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceScreenType.swift; sourceTree = "<group>"; };
+		A9CE80D62365B205004766CA /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		A9CE80D82365B2FE004766CA /* IconTextCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconTextCell.swift; sourceTree = "<group>"; };
+		A9CE80DA2365B31C004766CA /* PhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		A9CE80DB2365B31C004766CA /* IconTextCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IconTextCell.xib; sourceTree = "<group>"; };
+		A9CE80DC2365B31D004766CA /* IconImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconImageCell.swift; sourceTree = "<group>"; };
+		A9CE80DD2365B31D004766CA /* SocialCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SocialCell.xib; sourceTree = "<group>"; };
+		A9CE80DE2365B31D004766CA /* SocialCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialCell.swift; sourceTree = "<group>"; };
+		A9CE80DF2365B31D004766CA /* PhotoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoCell.xib; sourceTree = "<group>"; };
+		A9CE80E02365B31D004766CA /* IconImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IconImageCell.xib; sourceTree = "<group>"; };
+		A9F2E0CC2365D7A4007CCC70 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		A9F2E0CE2365D7F1007CCC70 /* PhotoCollectionViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewLayout.swift; sourceTree = "<group>"; };
+		A9F2E0D02365D806007CCC70 /* EventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
+		A9F2E0D22365D813007CCC70 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		A9F2E0D42365D825007CCC70 /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
+		A9F2E0D62365D833007CCC70 /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
+		A9F2E0D92365D90B007CCC70 /* Product-Sans-Bold-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Product-Sans-Bold-Italic.ttf"; sourceTree = "<group>"; };
+		A9F2E0DA2365D90B007CCC70 /* Product-Sans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Product-Sans-Italic.ttf"; sourceTree = "<group>"; };
+		A9F2E0DB2365D90B007CCC70 /* Product-Sans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Product-Sans-Regular.ttf"; sourceTree = "<group>"; };
+		A9F2E0DC2365D90B007CCC70 /* Product-Sans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Product-Sans-Bold.ttf"; sourceTree = "<group>"; };
+		A9F2E0E52365DAB5007CCC70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A9F2E0E62365DACF007CCC70 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		A9F2E0EA2365DB60007CCC70 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A9F2E0EC2365DB61007CCC70 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B80A499A9062D0BF49B97AAD /* currentPlatform.kt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = currentPlatform.kt; path = ../common/src/jvmMain/kotlin/org/example/kotlin/multiplatform/presenter/currentPlatform.kt; sourceTree = "<group>"; };
 		C914F9507BB8DEB0CC64136C /* HelloResponse.kt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = HelloResponse.kt; path = ../common/src/commonMain/kotlin/org/example/kotlin/multiplatform/data/responses/HelloResponse.kt; sourceTree = "<group>"; };
 		CFD9CCA731DAB924CE02AFBC /* currentPlatform.kt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = currentPlatform.kt; path = ../common/src/jsMain/kotlin/org/example/kotlin/multiplatform/presenter/currentPlatform.kt; sourceTree = "<group>"; };
@@ -77,11 +125,8 @@
 		D9EF6B60DA949E451A5956D6 /* Greeting.kt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Greeting.kt; path = ../common/src/commonMain/kotlin/org/example/kotlin/multiplatform/data/model/Greeting.kt; sourceTree = "<group>"; };
 		E0696363F0F552C411F86B6A /* CustomMainScope.kt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CustomMainScope.kt; path = ../common/src/iOSMain/kotlin/org/example/kotlin/multiplatform/coroutines/CustomMainScope.kt; sourceTree = "<group>"; };
 		FAB5AA222273D1190095C309 /* KotlinMultiplatformTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KotlinMultiplatformTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		FAB5AA252273D1190095C309 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAB5AA272273D1190095C309 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		FAB5AA2A2273D1190095C309 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FAB5AA2C2273D11A0095C309 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		FAB5AA2F2273D11A0095C309 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAB5AA312273D11A0095C309 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAB5AA362273D11A0095C309 /* KotlinMultiplatformTemplateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KotlinMultiplatformTemplateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAB5AA3A2273D11A0095C309 /* KotlinMultiplatformProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KotlinMultiplatformProjectTests.swift; sourceTree = "<group>"; };
@@ -89,6 +134,7 @@
 		FAB5AA412273D11A0095C309 /* KotlinMultiplatformTemplateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KotlinMultiplatformTemplateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAB5AA452273D11A0095C309 /* KotlinMultiplatformTemplateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KotlinMultiplatformTemplateUITests.swift; sourceTree = "<group>"; };
 		FAB5AA472273D11A0095C309 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBCBC080112C095B2C1C520C /* Pods_KotlinMultiplatformTemplate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KotlinMultiplatformTemplate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +142,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0AA26E04BAB610A26D678F0B /* libPods-KotlinMultiplatformTemplate.a in Frameworks */,
+				9200EEBE82D6D16A30FC331F /* Pods_KotlinMultiplatformTemplate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,7 +345,7 @@
 		5446D2642E2A1F6C564D2D5C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9E445EB74BB67577D01865C1 /* libPods-KotlinMultiplatformTemplate.a */,
+				FBCBC080112C095B2C1C520C /* Pods_KotlinMultiplatformTemplate.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -551,6 +597,86 @@
 			name = es;
 			sourceTree = "<group>";
 		};
+		A9CE80C62365B05D004766CA /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				A9F2E0CE2365D7F1007CCC70 /* PhotoCollectionViewLayout.swift */,
+				A9CE80CA2365B089004766CA /* Storyboard */,
+				A9CE80C92365B07D004766CA /* Views */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		A9CE80C72365B065004766CA /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				A9F2E0D82365D90B007CCC70 /* fonts */,
+				FAB5AA2C2273D11A0095C309 /* Assets.xcassets */,
+				A9F2E0EB2365DB60007CCC70 /* Localizable.strings */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		A9CE80C82365B06D004766CA /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				A9CE80CD2365B178004766CA /* Utils */,
+				FAB5AA272273D1190095C309 /* MainViewController.swift */,
+				A9CE80CB2365B10E004766CA /* AppDelegate.swift */,
+				A9F2E0D02365D806007CCC70 /* EventViewController.swift */,
+				A9F2E0D22365D813007CCC70 /* AboutViewController.swift */,
+				A9F2E0D42365D825007CCC70 /* PhotoViewController.swift */,
+				A9F2E0D62365D833007CCC70 /* ContactsViewController.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		A9CE80C92365B07D004766CA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A9CE80DC2365B31D004766CA /* IconImageCell.swift */,
+				A9CE80E02365B31D004766CA /* IconImageCell.xib */,
+				A9CE80DB2365B31C004766CA /* IconTextCell.xib */,
+				A9CE80DA2365B31C004766CA /* PhotoCell.swift */,
+				A9CE80DF2365B31D004766CA /* PhotoCell.xib */,
+				A9CE80DE2365B31D004766CA /* SocialCell.swift */,
+				A9CE80DD2365B31D004766CA /* SocialCell.xib */,
+				A9CE80D82365B2FE004766CA /* IconTextCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A9CE80CA2365B089004766CA /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				A9F2E0CC2365D7A4007CCC70 /* Main.storyboard */,
+				FAB5AA2E2273D11A0095C309 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		A9CE80CD2365B178004766CA /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A9CE80CE2365B18A004766CA /* Extensions.swift */,
+				A9CE80D22365B1AB004766CA /* Fonts.swift */,
+				A9CE80D42365B1FC004766CA /* DeviceScreenType.swift */,
+				A9CE80D62365B205004766CA /* Colors.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		A9F2E0D82365D90B007CCC70 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				A9F2E0D92365D90B007CCC70 /* Product-Sans-Bold-Italic.ttf */,
+				A9F2E0DA2365D90B007CCC70 /* Product-Sans-Italic.ttf */,
+				A9F2E0DB2365D90B007CCC70 /* Product-Sans-Regular.ttf */,
+				A9F2E0DC2365D90B007CCC70 /* Product-Sans-Bold.ttf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
 		B4F6C285C197928A481205CD /* data */ = {
 			isa = PBXGroup;
 			children = (
@@ -666,11 +792,9 @@
 		FAB5AA242273D1190095C309 /* KotlinMultiplatformTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				FAB5AA252273D1190095C309 /* AppDelegate.swift */,
-				FAB5AA272273D1190095C309 /* MainViewController.swift */,
-				FAB5AA292273D1190095C309 /* Main.storyboard */,
-				FAB5AA2C2273D11A0095C309 /* Assets.xcassets */,
-				FAB5AA2E2273D11A0095C309 /* LaunchScreen.storyboard */,
+				A9CE80C82365B06D004766CA /* Source */,
+				A9CE80C72365B065004766CA /* Assets */,
+				A9CE80C62365B05D004766CA /* UI */,
 				FAB5AA312273D11A0095C309 /* Info.plist */,
 			);
 			path = KotlinMultiplatformTemplate;
@@ -737,6 +861,7 @@
 				FAB5AA1E2273D1190095C309 /* Sources */,
 				FAB5AA1F2273D1190095C309 /* Frameworks */,
 				FAB5AA202273D1190095C309 /* Resources */,
+				769B2414CC920AD803FC711C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -791,7 +916,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1010;
-				ORGANIZATIONNAME = "Guillermo Orellana";
+				ORGANIZATIONNAME = "GDG Venezia";
 				TargetAttributes = {
 					FAB5AA212273D1190095C309 = {
 						CreatedOnToolsVersion = 10.1;
@@ -813,6 +938,7 @@
 			knownRegions = (
 				en,
 				Base,
+				it,
 			);
 			mainGroup = FAB5AA192273D1190095C309;
 			productRefGroup = FAB5AA232273D1190095C309 /* Products */;
@@ -831,9 +957,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9F2E0E02365D90B007CCC70 /* Product-Sans-Regular.ttf in Resources */,
+				A9F2E0E92365DB60007CCC70 /* Localizable.strings in Resources */,
+				A9F2E0CD2365D7A5007CCC70 /* Main.storyboard in Resources */,
+				A9CE80E62365B31D004766CA /* PhotoCell.xib in Resources */,
+				A9F2E0DF2365D90B007CCC70 /* Product-Sans-Italic.ttf in Resources */,
 				FAB5AA302273D11A0095C309 /* LaunchScreen.storyboard in Resources */,
 				FAB5AA2D2273D11A0095C309 /* Assets.xcassets in Resources */,
-				FAB5AA2B2273D1190095C309 /* Main.storyboard in Resources */,
+				A9F2E0DE2365D90B007CCC70 /* Product-Sans-Bold-Italic.ttf in Resources */,
+				A9F2E0E12365D90B007CCC70 /* Product-Sans-Bold.ttf in Resources */,
+				A9CE80E42365B31D004766CA /* SocialCell.xib in Resources */,
+				A9CE80E22365B31D004766CA /* IconTextCell.xib in Resources */,
+				A9CE80E72365B31D004766CA /* IconImageCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -854,6 +989,36 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		769B2414CC920AD803FC711C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KotlinMultiplatformTemplate/Pods-KotlinMultiplatformTemplate-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/MDFInternationalization/MDFInternationalization.framework",
+				"${BUILT_PRODUCTS_DIR}/MDFTextAccessibility/MDFTextAccessibility.framework",
+				"${BUILT_PRODUCTS_DIR}/MaterialComponents/MaterialComponents.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDFInternationalization.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDFTextAccessibility.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MaterialComponents.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KotlinMultiplatformTemplate/Pods-KotlinMultiplatformTemplate-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		F277217C0D198B01477F9937 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -884,26 +1049,39 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAB5AA282273D1190095C309 /* MainViewController.swift in Sources */,
-				FAB5AA262273D1190095C309 /* AppDelegate.swift in Sources */,
+				A9CE80E52365B31D004766CA /* SocialCell.swift in Sources */,
 				146A74EB7C2C2D8CFFE6E9FB /* defaultNetworkConfig.kt in Sources */,
 				4B49D84FC1A130102CB97FCA /* currentPlatform.kt in Sources */,
+				A9CE80D52365B1FC004766CA /* DeviceScreenType.swift in Sources */,
 				C6313A4051D64EE925194183 /* CustomMainScope.kt in Sources */,
+				A9CE80D92365B2FE004766CA /* IconTextCell.swift in Sources */,
 				65A5F1116655A829E9968259 /* defaultNetworkConfig.kt in Sources */,
+				A9CE80D72365B205004766CA /* Colors.swift in Sources */,
+				A9F2E0CF2365D7F1007CCC70 /* PhotoCollectionViewLayout.swift in Sources */,
 				68438720D56AC566F9B2C591 /* NetworkRepository.kt in Sources */,
 				DDF4EC6F6218091EC09F89A9 /* Greeting.kt in Sources */,
+				A9CE80E12365B31D004766CA /* PhotoCell.swift in Sources */,
 				B2F772FC50E7D08A7AFF5946 /* NotDagger.kt in Sources */,
+				A9F2E0D32365D813007CCC70 /* AboutViewController.swift in Sources */,
 				E66E0608D2DC4B7AC294D513 /* HelloPresenter.kt in Sources */,
+				A9CE80CF2365B18A004766CA /* Extensions.swift in Sources */,
+				A9CE80D32365B1AB004766CA /* Fonts.swift in Sources */,
 				FD196E5C62705C8721537363 /* Paths.kt in Sources */,
 				AE5D58E83754340703D6B8AD /* CustomMainScope.kt in Sources */,
 				E12863E04EA7FD33C2D6D536 /* HelloResponse.kt in Sources */,
+				A9F2E0D72365D833007CCC70 /* ContactsViewController.swift in Sources */,
 				6A6F8BF402155473FBEDBC86 /* ErrorResponse.kt in Sources */,
 				344CAF2993633A55C4E48493 /* NetworkDataSource.kt in Sources */,
 				1D020DA9B27B82EFA339B960 /* Greeting.kt in Sources */,
 				BFA05C3203A37D6EC43DDBD8 /* GetHello.kt in Sources */,
 				FC06FD392E1A976B595000D3 /* currentPlatform.kt in Sources */,
+				A9F2E0D12365D806007CCC70 /* EventViewController.swift in Sources */,
 				114EB423786D9FE9757F0572 /* CustomMainScope.kt in Sources */,
+				A9CE80CC2365B10E004766CA /* AppDelegate.swift in Sources */,
 				20661033D13914C2ABE3A788 /* currentPlatform.kt in Sources */,
+				A9CE80E32365B31D004766CA /* IconImageCell.swift in Sources */,
 				90B4AB2640F0E9CF08176153 /* CustomMainScope.kt in Sources */,
+				A9F2E0D52365D825007CCC70 /* PhotoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -939,18 +1117,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		FAB5AA292273D1190095C309 /* Main.storyboard */ = {
+		A9F2E0EB2365DB60007CCC70 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				FAB5AA2A2273D1190095C309 /* Base */,
+				A9F2E0EA2365DB60007CCC70 /* en */,
+				A9F2E0EC2365DB61007CCC70 /* it */,
 			);
-			name = Main.storyboard;
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 		FAB5AA2E2273D11A0095C309 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				FAB5AA2F2273D11A0095C309 /* Base */,
+				A9F2E0E52365DAB5007CCC70 /* Base */,
+				A9F2E0E62365DACF007CCC70 /* it */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -962,6 +1142,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -1023,6 +1204,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
