@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_KotlinMultiplatformTemplateVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_KotlinMultiplatformTemplateVersionString[];
+FOUNDATION_EXPORT double Pods_GDGVeneziaShowcaseVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_GDGVeneziaShowcaseVersionString[];
 

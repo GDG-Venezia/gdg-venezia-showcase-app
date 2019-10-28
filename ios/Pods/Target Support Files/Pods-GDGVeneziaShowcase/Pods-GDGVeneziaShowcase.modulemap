@@ -1,0 +1,6 @@
+framework module Pods_GDGVeneziaShowcase {
+  umbrella header "Pods-GDGVeneziaShowcase-umbrella.h"
+
+  export *
+  module * { export * }
+}

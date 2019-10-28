@@ -120,8 +120,8 @@ configurations {
 }
 
 xcode {
-    projectPath = "../ios/KotlinMultiplatformTemplate.xcodeproj"
-    target = "KotlinMultiplatformTemplate"
+    projectPath = "../ios/GDGVeneziaShowcase.xcodeproj"
+    target = "GDGVeneziaShowcase"
 }
 
 detekt {

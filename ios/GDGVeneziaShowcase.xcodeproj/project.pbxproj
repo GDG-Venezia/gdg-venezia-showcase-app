@@ -17,7 +17,7 @@
 		68438720D56AC566F9B2C591 /* NetworkRepository.kt in Sources */ = {isa = PBXBuildFile; fileRef = 2871EB1ED68743394430D9B2 /* NetworkRepository.kt */; settings = {COMPILER_FLAGS = "-w"; }; };
 		6A6F8BF402155473FBEDBC86 /* ErrorResponse.kt in Sources */ = {isa = PBXBuildFile; fileRef = D38000A568F5593E932EC460 /* ErrorResponse.kt */; settings = {COMPILER_FLAGS = "-w"; }; };
 		90B4AB2640F0E9CF08176153 /* CustomMainScope.kt in Sources */ = {isa = PBXBuildFile; fileRef = 5EB048F20551F58A758700BE /* CustomMainScope.kt */; settings = {COMPILER_FLAGS = "-w"; }; };
-		9200EEBE82D6D16A30FC331F /* Pods_KotlinMultiplatformTemplate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBCBC080112C095B2C1C520C /* Pods_KotlinMultiplatformTemplate.framework */; };
+		9B39ADF9AFB0B3D92674A590 /* Pods_GDGVeneziaShowcase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81F6DDD395F0C3C5DDD703FA /* Pods_GDGVeneziaShowcase.framework */; };
 		A9CE80CC2365B10E004766CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CE80CB2365B10E004766CA /* AppDelegate.swift */; };
 		A9CE80CF2365B18A004766CA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CE80CE2365B18A004766CA /* Extensions.swift */; };
 		A9CE80D32365B1AB004766CA /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CE80D22365B1AB004766CA /* Fonts.swift */; };
@@ -78,8 +78,10 @@
 /* Begin PBXFileReference section */
 		0328CAB91FF045BD7C8BE258 /* HelloPresenter.kt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = HelloPresenter.kt; path = ../common/src/commonMain/kotlin/org/example/kotlin/multiplatform/presenter/HelloPresenter.kt; sourceTree = "<group>"; };
 		03A9E83CD0B2B40F11145B2D /* defaultNetworkConfig.kt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = defaultNetworkConfig.kt; path = ../common/src/commonDebug/kotlin/org/example/kotlin/multiplatform/data/defaultNetworkConfig.kt; sourceTree = "<group>"; };
+		05B47B7B82AA94AE993A3E90 /* Pods-GDGVeneziaShowcase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GDGVeneziaShowcase.debug.xcconfig"; path = "Target Support Files/Pods-GDGVeneziaShowcase/Pods-GDGVeneziaShowcase.debug.xcconfig"; sourceTree = "<group>"; };
 		0EF511067747BBB966DBAA6B /* defaultNetworkConfig.kt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = defaultNetworkConfig.kt; path = ../common/src/commonRelease/kotlin/org/example/kotlin/multiplatform/data/defaultNetworkConfig.kt; sourceTree = "<group>"; };
 		13FE23183FDE050291130B6E /* CustomMainScope.kt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CustomMainScope.kt; path = ../common/src/commonMain/kotlin/org/example/kotlin/multiplatform/coroutines/CustomMainScope.kt; sourceTree = "<group>"; };
+		1AB6EFA77010823B9EBB9A2B /* Pods-GDGVeneziaShowcase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GDGVeneziaShowcase.release.xcconfig"; path = "Target Support Files/Pods-GDGVeneziaShowcase/Pods-GDGVeneziaShowcase.release.xcconfig"; sourceTree = "<group>"; };
 		1AF70CB837156181F44432DA /* NotDagger.kt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = NotDagger.kt; path = ../common/src/commonMain/kotlin/org/example/kotlin/multiplatform/di/NotDagger.kt; sourceTree = "<group>"; };
 		2871EB1ED68743394430D9B2 /* NetworkRepository.kt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = NetworkRepository.kt; path = ../common/src/commonMain/kotlin/org/example/kotlin/multiplatform/repository/NetworkRepository.kt; sourceTree = "<group>"; };
 		41ED1642DAFBCD5B378D724F /* Paths.kt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Paths.kt; path = ../common/src/commonMain/kotlin/org/example/kotlin/multiplatform/api/Paths.kt; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 		5EB048F20551F58A758700BE /* CustomMainScope.kt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CustomMainScope.kt; path = ../common/src/jsMain/kotlin/org/example/kotlin/multiplatform/coroutines/CustomMainScope.kt; sourceTree = "<group>"; };
 		6AB40D71B57F2F8FB383010B /* GetHello.kt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = GetHello.kt; path = ../common/src/commonMain/kotlin/org/example/kotlin/multiplatform/usecase/GetHello.kt; sourceTree = "<group>"; };
 		79B89E83D48E22AD01C97C1C /* currentPlatform.kt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = currentPlatform.kt; path = ../common/src/iOSMain/kotlin/org/example/kotlin/multiplatform/presenter/currentPlatform.kt; sourceTree = "<group>"; };
+		81F6DDD395F0C3C5DDD703FA /* Pods_GDGVeneziaShowcase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GDGVeneziaShowcase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		92C3B1D9B3DD5910641FC255 /* CustomMainScope.kt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CustomMainScope.kt; path = ../common/src/jvmMain/kotlin/org/example/kotlin/multiplatform/coroutines/CustomMainScope.kt; sourceTree = "<group>"; };
 		97EDEB862924ABD409382E83 /* Pods-KotlinMultiplatformTemplate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KotlinMultiplatformTemplate.release.xcconfig"; path = "Target Support Files/Pods-KotlinMultiplatformTemplate/Pods-KotlinMultiplatformTemplate.release.xcconfig"; sourceTree = "<group>"; };
 		9C031104080AF4FB2C2D927B /* Pods-KotlinMultiplatformTemplate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KotlinMultiplatformTemplate.debug.xcconfig"; path = "Target Support Files/Pods-KotlinMultiplatformTemplate/Pods-KotlinMultiplatformTemplate.debug.xcconfig"; sourceTree = "<group>"; };
@@ -124,14 +127,14 @@
 		D38000A568F5593E932EC460 /* ErrorResponse.kt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ErrorResponse.kt; path = ../common/src/commonMain/kotlin/org/example/kotlin/multiplatform/data/responses/ErrorResponse.kt; sourceTree = "<group>"; };
 		D9EF6B60DA949E451A5956D6 /* Greeting.kt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Greeting.kt; path = ../common/src/commonMain/kotlin/org/example/kotlin/multiplatform/data/model/Greeting.kt; sourceTree = "<group>"; };
 		E0696363F0F552C411F86B6A /* CustomMainScope.kt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CustomMainScope.kt; path = ../common/src/iOSMain/kotlin/org/example/kotlin/multiplatform/coroutines/CustomMainScope.kt; sourceTree = "<group>"; };
-		FAB5AA222273D1190095C309 /* KotlinMultiplatformTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KotlinMultiplatformTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAB5AA222273D1190095C309 /* GDGVeneziaShowcase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GDGVeneziaShowcase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAB5AA272273D1190095C309 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		FAB5AA2C2273D11A0095C309 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAB5AA312273D11A0095C309 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FAB5AA362273D11A0095C309 /* KotlinMultiplatformTemplateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KotlinMultiplatformTemplateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAB5AA362273D11A0095C309 /* GDGVeneziaShowcaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GDGVeneziaShowcaseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAB5AA3A2273D11A0095C309 /* KotlinMultiplatformProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KotlinMultiplatformProjectTests.swift; sourceTree = "<group>"; };
 		FAB5AA3C2273D11A0095C309 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FAB5AA412273D11A0095C309 /* KotlinMultiplatformTemplateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KotlinMultiplatformTemplateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAB5AA412273D11A0095C309 /* GDGVeneziaShowcaseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GDGVeneziaShowcaseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAB5AA452273D11A0095C309 /* KotlinMultiplatformTemplateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KotlinMultiplatformTemplateUITests.swift; sourceTree = "<group>"; };
 		FAB5AA472273D11A0095C309 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FBCBC080112C095B2C1C520C /* Pods_KotlinMultiplatformTemplate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KotlinMultiplatformTemplate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -142,7 +145,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9200EEBE82D6D16A30FC331F /* Pods_KotlinMultiplatformTemplate.framework in Frameworks */,
+				9B39ADF9AFB0B3D92674A590 /* Pods_GDGVeneziaShowcase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,6 +349,7 @@
 			isa = PBXGroup;
 			children = (
 				FBCBC080112C095B2C1C520C /* Pods_KotlinMultiplatformTemplate.framework */,
+				81F6DDD395F0C3C5DDD703FA /* Pods_GDGVeneziaShowcase.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -714,6 +718,8 @@
 			children = (
 				9C031104080AF4FB2C2D927B /* Pods-KotlinMultiplatformTemplate.debug.xcconfig */,
 				97EDEB862924ABD409382E83 /* Pods-KotlinMultiplatformTemplate.release.xcconfig */,
+				05B47B7B82AA94AE993A3E90 /* Pods-GDGVeneziaShowcase.debug.xcconfig */,
+				1AB6EFA77010823B9EBB9A2B /* Pods-GDGVeneziaShowcase.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -769,9 +775,9 @@
 		FAB5AA192273D1190095C309 = {
 			isa = PBXGroup;
 			children = (
-				FAB5AA242273D1190095C309 /* KotlinMultiplatformTemplate */,
-				FAB5AA392273D11A0095C309 /* KotlinMultiplatformTemplateTests */,
-				FAB5AA442273D11A0095C309 /* KotlinMultiplatformTemplateUITests */,
+				FAB5AA242273D1190095C309 /* GDGVeneziaShowcase */,
+				FAB5AA392273D11A0095C309 /* GDGVeneziaShowcaseTests */,
+				FAB5AA442273D11A0095C309 /* GDGVeneziaShowcaseUITests */,
 				FAB5AA232273D1190095C309 /* Products */,
 				D746DFDD63567F5994850DED /* Pods */,
 				A1B0582BEEE5E1CA3F8D0AED /* Kotlin */,
@@ -782,14 +788,14 @@
 		FAB5AA232273D1190095C309 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FAB5AA222273D1190095C309 /* KotlinMultiplatformTemplate.app */,
-				FAB5AA362273D11A0095C309 /* KotlinMultiplatformTemplateTests.xctest */,
-				FAB5AA412273D11A0095C309 /* KotlinMultiplatformTemplateUITests.xctest */,
+				FAB5AA222273D1190095C309 /* GDGVeneziaShowcase.app */,
+				FAB5AA362273D11A0095C309 /* GDGVeneziaShowcaseTests.xctest */,
+				FAB5AA412273D11A0095C309 /* GDGVeneziaShowcaseUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FAB5AA242273D1190095C309 /* KotlinMultiplatformTemplate */ = {
+		FAB5AA242273D1190095C309 /* GDGVeneziaShowcase */ = {
 			isa = PBXGroup;
 			children = (
 				A9CE80C82365B06D004766CA /* Source */,
@@ -797,25 +803,25 @@
 				A9CE80C62365B05D004766CA /* UI */,
 				FAB5AA312273D11A0095C309 /* Info.plist */,
 			);
-			path = KotlinMultiplatformTemplate;
+			path = GDGVeneziaShowcase;
 			sourceTree = "<group>";
 		};
-		FAB5AA392273D11A0095C309 /* KotlinMultiplatformTemplateTests */ = {
+		FAB5AA392273D11A0095C309 /* GDGVeneziaShowcaseTests */ = {
 			isa = PBXGroup;
 			children = (
 				FAB5AA3A2273D11A0095C309 /* KotlinMultiplatformProjectTests.swift */,
 				FAB5AA3C2273D11A0095C309 /* Info.plist */,
 			);
-			path = KotlinMultiplatformTemplateTests;
+			path = GDGVeneziaShowcaseTests;
 			sourceTree = "<group>";
 		};
-		FAB5AA442273D11A0095C309 /* KotlinMultiplatformTemplateUITests */ = {
+		FAB5AA442273D11A0095C309 /* GDGVeneziaShowcaseUITests */ = {
 			isa = PBXGroup;
 			children = (
 				FAB5AA452273D11A0095C309 /* KotlinMultiplatformTemplateUITests.swift */,
 				FAB5AA472273D11A0095C309 /* Info.plist */,
 			);
-			path = KotlinMultiplatformTemplateUITests;
+			path = GDGVeneziaShowcaseUITests;
 			sourceTree = "<group>";
 		};
 		FBEAE82679B6FCCF24ABDBAC /* kotlin */ = {
@@ -853,9 +859,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FAB5AA212273D1190095C309 /* KotlinMultiplatformTemplate */ = {
+		FAB5AA212273D1190095C309 /* GDGVeneziaShowcase */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FAB5AA4A2273D11A0095C309 /* Build configuration list for PBXNativeTarget "KotlinMultiplatformTemplate" */;
+			buildConfigurationList = FAB5AA4A2273D11A0095C309 /* Build configuration list for PBXNativeTarget "GDGVeneziaShowcase" */;
 			buildPhases = (
 				F277217C0D198B01477F9937 /* [CP] Check Pods Manifest.lock */,
 				FAB5AA1E2273D1190095C309 /* Sources */,
@@ -867,14 +873,14 @@
 			);
 			dependencies = (
 			);
-			name = KotlinMultiplatformTemplate;
+			name = GDGVeneziaShowcase;
 			productName = KotlinMultiplatformTemplate;
-			productReference = FAB5AA222273D1190095C309 /* KotlinMultiplatformTemplate.app */;
+			productReference = FAB5AA222273D1190095C309 /* GDGVeneziaShowcase.app */;
 			productType = "com.apple.product-type.application";
 		};
-		FAB5AA352273D11A0095C309 /* KotlinMultiplatformTemplateTests */ = {
+		FAB5AA352273D11A0095C309 /* GDGVeneziaShowcaseTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FAB5AA4D2273D11A0095C309 /* Build configuration list for PBXNativeTarget "KotlinMultiplatformTemplateTests" */;
+			buildConfigurationList = FAB5AA4D2273D11A0095C309 /* Build configuration list for PBXNativeTarget "GDGVeneziaShowcaseTests" */;
 			buildPhases = (
 				FAB5AA322273D11A0095C309 /* Sources */,
 				FAB5AA332273D11A0095C309 /* Frameworks */,
@@ -885,14 +891,14 @@
 			dependencies = (
 				FAB5AA382273D11A0095C309 /* PBXTargetDependency */,
 			);
-			name = KotlinMultiplatformTemplateTests;
+			name = GDGVeneziaShowcaseTests;
 			productName = KotlinMultiplatformTemplateTests;
-			productReference = FAB5AA362273D11A0095C309 /* KotlinMultiplatformTemplateTests.xctest */;
+			productReference = FAB5AA362273D11A0095C309 /* GDGVeneziaShowcaseTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		FAB5AA402273D11A0095C309 /* KotlinMultiplatformTemplateUITests */ = {
+		FAB5AA402273D11A0095C309 /* GDGVeneziaShowcaseUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FAB5AA502273D11A0095C309 /* Build configuration list for PBXNativeTarget "KotlinMultiplatformTemplateUITests" */;
+			buildConfigurationList = FAB5AA502273D11A0095C309 /* Build configuration list for PBXNativeTarget "GDGVeneziaShowcaseUITests" */;
 			buildPhases = (
 				FAB5AA3D2273D11A0095C309 /* Sources */,
 				FAB5AA3E2273D11A0095C309 /* Frameworks */,
@@ -903,9 +909,9 @@
 			dependencies = (
 				FAB5AA432273D11A0095C309 /* PBXTargetDependency */,
 			);
-			name = KotlinMultiplatformTemplateUITests;
+			name = GDGVeneziaShowcaseUITests;
 			productName = KotlinMultiplatformTemplateUITests;
-			productReference = FAB5AA412273D11A0095C309 /* KotlinMultiplatformTemplateUITests.xctest */;
+			productReference = FAB5AA412273D11A0095C309 /* GDGVeneziaShowcaseUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -931,7 +937,7 @@
 					};
 				};
 			};
-			buildConfigurationList = FAB5AA1D2273D1190095C309 /* Build configuration list for PBXProject "KotlinMultiplatformTemplate" */;
+			buildConfigurationList = FAB5AA1D2273D1190095C309 /* Build configuration list for PBXProject "GDGVeneziaShowcase" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -945,9 +951,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FAB5AA212273D1190095C309 /* KotlinMultiplatformTemplate */,
-				FAB5AA352273D11A0095C309 /* KotlinMultiplatformTemplateTests */,
-				FAB5AA402273D11A0095C309 /* KotlinMultiplatformTemplateUITests */,
+				FAB5AA212273D1190095C309 /* GDGVeneziaShowcase */,
+				FAB5AA352273D11A0095C309 /* GDGVeneziaShowcaseTests */,
+				FAB5AA402273D11A0095C309 /* GDGVeneziaShowcaseUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -997,7 +1003,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-KotlinMultiplatformTemplate/Pods-KotlinMultiplatformTemplate-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-GDGVeneziaShowcase/Pods-GDGVeneziaShowcase-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/MDFInternationalization/MDFInternationalization.framework",
 				"${BUILT_PRODUCTS_DIR}/MDFTextAccessibility/MDFTextAccessibility.framework",
@@ -1016,7 +1022,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KotlinMultiplatformTemplate/Pods-KotlinMultiplatformTemplate-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GDGVeneziaShowcase/Pods-GDGVeneziaShowcase-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F277217C0D198B01477F9937 /* [CP] Check Pods Manifest.lock */ = {
@@ -1034,7 +1040,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-KotlinMultiplatformTemplate-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-GDGVeneziaShowcase-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1106,12 +1112,12 @@
 /* Begin PBXTargetDependency section */
 		FAB5AA382273D11A0095C309 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = FAB5AA212273D1190095C309 /* KotlinMultiplatformTemplate */;
+			target = FAB5AA212273D1190095C309 /* GDGVeneziaShowcase */;
 			targetProxy = FAB5AA372273D11A0095C309 /* PBXContainerItemProxy */;
 		};
 		FAB5AA432273D11A0095C309 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = FAB5AA212273D1190095C309 /* KotlinMultiplatformTemplate */;
+			target = FAB5AA212273D1190095C309 /* GDGVeneziaShowcase */;
 			targetProxy = FAB5AA422273D11A0095C309 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -1258,17 +1264,17 @@
 		};
 		FAB5AA4B2273D11A0095C309 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9C031104080AF4FB2C2D927B /* Pods-KotlinMultiplatformTemplate.debug.xcconfig */;
+			baseConfigurationReference = 05B47B7B82AA94AE993A3E90 /* Pods-GDGVeneziaShowcase.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = KotlinMultiplatformTemplate/Info.plist;
+				INFOPLIST_FILE = GDGVeneziaShowcase/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.example.kotlin.multiplatform;
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.gdgvenezia.showcase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
@@ -1278,17 +1284,17 @@
 		};
 		FAB5AA4C2273D11A0095C309 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 97EDEB862924ABD409382E83 /* Pods-KotlinMultiplatformTemplate.release.xcconfig */;
+			baseConfigurationReference = 1AB6EFA77010823B9EBB9A2B /* Pods-GDGVeneziaShowcase.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = KotlinMultiplatformTemplate/Info.plist;
+				INFOPLIST_FILE = GDGVeneziaShowcase/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.example.kotlin.multiplatform;
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.gdgvenezia.showcase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
@@ -1302,17 +1308,17 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = KotlinMultiplatformTemplateTests/Info.plist;
+				INFOPLIST_FILE = GDGVeneziaShowcaseTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.example.kotlin.multiplatform.KotlinMultiplatformTemplateTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.gdgvenezia.showcase.tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KotlinMultiplatformTemplate.app/KotlinMultiplatformTemplate";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GDGVeneziaShowcase.app/GDGVeneziaShowcase";
 			};
 			name = Debug;
 		};
@@ -1322,17 +1328,17 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = KotlinMultiplatformTemplateTests/Info.plist;
+				INFOPLIST_FILE = GDGVeneziaShowcaseTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.example.kotlin.multiplatform.KotlinMultiplatformTemplateTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.gdgvenezia.showcase.tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KotlinMultiplatformTemplate.app/KotlinMultiplatformTemplate";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GDGVeneziaShowcase.app/GDGVeneziaShowcase";
 			};
 			name = Release;
 		};
@@ -1341,13 +1347,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = KotlinMultiplatformTemplateUITests/Info.plist;
+				INFOPLIST_FILE = GDGVeneziaShowcaseUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.example.kotlin.multiplatform.KotlinMultiplatformTemplateUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.gdgvenezia.showcase.uitests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1360,13 +1366,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = KotlinMultiplatformTemplateUITests/Info.plist;
+				INFOPLIST_FILE = GDGVeneziaShowcaseUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.example.kotlin.multiplatform.KotlinMultiplatformTemplateUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.gdgvenezia.showcase.uitests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1377,7 +1383,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FAB5AA1D2273D1190095C309 /* Build configuration list for PBXProject "KotlinMultiplatformTemplate" */ = {
+		FAB5AA1D2273D1190095C309 /* Build configuration list for PBXProject "GDGVeneziaShowcase" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FAB5AA482273D11A0095C309 /* Debug */,
@@ -1386,7 +1392,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FAB5AA4A2273D11A0095C309 /* Build configuration list for PBXNativeTarget "KotlinMultiplatformTemplate" */ = {
+		FAB5AA4A2273D11A0095C309 /* Build configuration list for PBXNativeTarget "GDGVeneziaShowcase" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FAB5AA4B2273D11A0095C309 /* Debug */,
@@ -1395,7 +1401,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FAB5AA4D2273D11A0095C309 /* Build configuration list for PBXNativeTarget "KotlinMultiplatformTemplateTests" */ = {
+		FAB5AA4D2273D11A0095C309 /* Build configuration list for PBXNativeTarget "GDGVeneziaShowcaseTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FAB5AA4E2273D11A0095C309 /* Debug */,
@@ -1404,7 +1410,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FAB5AA502273D11A0095C309 /* Build configuration list for PBXNativeTarget "KotlinMultiplatformTemplateUITests" */ = {
+		FAB5AA502273D11A0095C309 /* Build configuration list for PBXNativeTarget "GDGVeneziaShowcaseUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FAB5AA512273D11A0095C309 /* Debug */,

@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "FAB5AA212273D1190095C309"
-               BuildableName = "KotlinMultiplatformTemplate.app"
-               BlueprintName = "KotlinMultiplatformTemplate"
-               ReferencedContainer = "container:KotlinMultiplatformTemplate.xcodeproj">
+               BuildableName = "GDGVeneziaShowcase.app"
+               BlueprintName = "GDGVeneziaShowcase"
+               ReferencedContainer = "container:GDGVeneziaShowcase.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -27,15 +27,24 @@
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "FAB5AA212273D1190095C309"
+            BuildableName = "GDGVeneziaShowcase.app"
+            BlueprintName = "GDGVeneziaShowcase"
+            ReferencedContainer = "container:GDGVeneziaShowcase.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <Testables>
          <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "FAB5AA352273D11A0095C309"
-               BuildableName = "KotlinMultiplatformTemplateTests.xctest"
-               BlueprintName = "KotlinMultiplatformTemplateTests"
-               ReferencedContainer = "container:KotlinMultiplatformTemplate.xcodeproj">
+               BuildableName = "GDGVeneziaShowcaseTests.xctest"
+               BlueprintName = "GDGVeneziaShowcaseTests"
+               ReferencedContainer = "container:GDGVeneziaShowcase.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,23 +52,12 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "FAB5AA402273D11A0095C309"
-               BuildableName = "KotlinMultiplatformTemplateUITests.xctest"
-               BlueprintName = "KotlinMultiplatformTemplateUITests"
-               ReferencedContainer = "container:KotlinMultiplatformTemplate.xcodeproj">
+               BuildableName = "GDGVeneziaShowcaseUITests.xctest"
+               BlueprintName = "GDGVeneziaShowcaseUITests"
+               ReferencedContainer = "container:GDGVeneziaShowcase.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FAB5AA212273D1190095C309"
-            BuildableName = "KotlinMultiplatformTemplate.app"
-            BlueprintName = "KotlinMultiplatformTemplate"
-            ReferencedContainer = "container:KotlinMultiplatformTemplate.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
-      <AdditionalOptions>
-      </AdditionalOptions>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
@@ -76,13 +74,11 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FAB5AA212273D1190095C309"
-            BuildableName = "KotlinMultiplatformTemplate.app"
-            BlueprintName = "KotlinMultiplatformTemplate"
-            ReferencedContainer = "container:KotlinMultiplatformTemplate.xcodeproj">
+            BuildableName = "GDGVeneziaShowcase.app"
+            BlueprintName = "GDGVeneziaShowcase"
+            ReferencedContainer = "container:GDGVeneziaShowcase.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
-      <AdditionalOptions>
-      </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -95,9 +91,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FAB5AA212273D1190095C309"
-            BuildableName = "KotlinMultiplatformTemplate.app"
-            BlueprintName = "KotlinMultiplatformTemplate"
-            ReferencedContainer = "container:KotlinMultiplatformTemplate.xcodeproj">
+            BuildableName = "GDGVeneziaShowcase.app"
+            BlueprintName = "GDGVeneziaShowcase"
+            ReferencedContainer = "container:GDGVeneziaShowcase.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

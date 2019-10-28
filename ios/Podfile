@@ -9,6 +9,6 @@ pod 'MaterialComponents/Snackbar'
 use_frameworks!
 pod 'SDWebImage'
 
-target 'KotlinMultiplatformTemplate' do
+target 'GDGVeneziaShowcase' do
     pod 'common', :path => '../common'
 end
