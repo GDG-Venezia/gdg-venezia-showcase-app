@@ -1,7 +1,5 @@
 package com.github.gdgvenezia.domain.entities
 
-import com.github.gdgvenezia.domain.entities.EventModel
-
 /**
  * @author Andrea Maglie
  */

@@ -17,8 +17,6 @@ import kotlinx.serialization.json.Json
 /**
  * @author Andrea Maglie
  */
-//internal expect val ApplicationDispatcher: CoroutineDispatcher
-
 private const val ENDPOINT = "https://thawing-ridge-92338.herokuapp.com"
 
 @UnstableDefault
@@ -55,20 +53,6 @@ class Api {
             }
         }
     }
-
-    /*
-    fun getPhotos(callback: (List<PhotoResponseModel>) -> Unit) {
-        GlobalScope.apply {
-            launch(ApplicationDispatcher) {
-                val result: List<PhotoResponseModel> = client.get {
-                    url("$ENDPOINT/photos")
-                }
-
-                callback(result)
-            }
-        }
-    }
-    */
 
     suspend fun getPhotos(): List<PhotoResponseItemModel> {
         return client.get<PhotoResponseModel>("$ENDPOINT/photos").items
@@ -120,23 +104,6 @@ data class TeamListResponseModel(
 data class SocialListResponseModel(
         @SerialName("items") val items: List<SocialLinkResponseModel>
 )
-
-/*
-@Suppress("PARAMETER_NAME_CHANGED_ON_OVERRIDE")
-@Serializer(PhotoResponseModel::class)
-object PhotoResponseModelSerializer: KSerializer<PhotoResponseModel> {
-
-    override val descriptor = StringDescriptor.withName("PhotoResponseModel")
-
-    override fun serialize(output: Encoder, obj: PhotoResponseModel) {
-        PhotoResponseItemModel.serializer().list.serialize(output, obj.items)
-    }
-
-    override fun deserialize(input: Decoder): PhotoResponseModel {
-        return PhotoResponseModel(PhotoResponseItemModel.serializer().list.deserialize(input))
-    }
-}
-*/
 
 @Serializable
 data class PhotoResponseItemModel(

@@ -12,22 +12,19 @@ import com.github.gdgvenezia.presentation.events.EventListPresenter
 import com.github.gdgvenezia.presentation.photos.PhotoPresenter
 import com.github.gdgvenezia.presentation.social.SocialPresenter
 import kotlinx.coroutines.CoroutineScope
+import kotlinx.serialization.UnstableDefault
 import kotlin.native.concurrent.ThreadLocal
 
 /**
  * @author Andrea Maglie
  */
+@UnstableDefault
 @ThreadLocal
 object ServiceLocator {
 
     val api = Api()
 
     val repository = RepositoryImpl(api)
-
-    /*
-    val getEventListUseCase: GetEventListUseCase
-        get() = GetEventListUseCase(repository)
-    */
 
     val customMainScope = CustomMainScope()
 
