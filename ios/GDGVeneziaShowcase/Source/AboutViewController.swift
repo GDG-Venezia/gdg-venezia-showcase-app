@@ -37,8 +37,7 @@ class AboutViewController: UIViewController, TeamView {
     
     private func setupAboutCard() {
 
-        // TODO: look for a better description
-        self.labelAbout.text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu ...."
+        self.labelAbout.text = "Il Google Developers Group (GDG) Venezia si propone come punto di incontro per gli appassionati di tecnologie e piattaforme Google, come Android, Firebase, Flutter, Angular, Chrome, Google Apps, Cloud Platform... ma non solo questo!"
         
         self.labelAbout.font = Fonts.get(.regular, size: Fonts.Sizes.normal)
         

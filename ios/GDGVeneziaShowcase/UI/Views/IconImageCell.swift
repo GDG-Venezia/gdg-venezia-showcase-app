@@ -40,8 +40,8 @@ class IconImageCell: UITableViewCell {
         self.labelTitle.text = "\(member.firstname) \(member.lastname)"
         self.labelSubtitle.text = member.shortDescription
         
+        self.leftImage.sd_setImage(with: URL(string: member.pictureUrl))
         
-        self.leftImage.image = UIImage(named: "mg")
         self.leftImage.layer.cornerRadius = self.leftImage.frame.size.width/2
         self.leftImage.clipsToBounds = true
 
