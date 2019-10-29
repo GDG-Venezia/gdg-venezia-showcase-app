@@ -1,117 +1,44 @@
-[![CircleCI Badge](https://circleci.com/gh/wiyarmir/kotlin-multiplatform-template.svg?style=svg)](https://circleci.com/gh/wiyarmir/kotlin-multiplatform-template)
-![Kotlin Version](https://img.shields.io/badge/kotlin-v1.3.40-F88909?style=flat&logo=kotlin)
+# GDG Venezia Showcase App
 
-# Kotlin Multiplatform Template
+This is a simple showcase application for the GDG Venezia built using Kotlin Multiplatform.
 
-Template that will give you a ready-to-go project including:
+<p align="center">
+<img width="800px" src="https://github.com/GDG-Venezia/gdg-venezia-showcase-app/blob/develop/screens.png?raw=true">
+</p>
 
-- Backend project with Ktor at [backend/](/backend)
-- Frontend project with KotlinJS and React Kotlin at [web/](/web)
-- Android App project with KotlinJVM at [android/](/android)
-- iOS App project with KotlinNative at [ios/](/ios)
-- Shared network, domain and presentation at [common/](/common)
+The application has been developed for the [Kotlin/Everywhere Venice Event](https://www.meetup.com/it-IT/GDG-Venezia/events/265665209/) 
 
-*Looking for a project with just Android and iOS? It's here: https://github.com/wiyarmir/kotlin-multiplatform-mobile-template*
+The slide of the event will be available soon.
 
-*Looking for a project with just Backend and Web? It's here: https://github.com/wiyarmir/kotlin-multiplatform-frontend-template*
+There is also a backend for this application and guess what, it's written in Kotlin. The source code is available on [Github](https://github.com/GDG-Venezia/gdg-venezia-showcase-app-backend)
 
-## Building and running the project
+## Running the app:
 
-### Backend
-
-There is a Gradle task that will produce a JAR ready to go.
-
-```bash
-$ ./gradlew stage
-```
-
-The output is in `backend/build/libs/backend-release.jar`.
-
-The following environment variables are recognised:
-
-| Name | Value |
-|------|-------|
-| PORT | Port where the server will run and listen to incoming connections |
-| ENVIRONMENT | Can be either `production` or `development`. If absent, will assume `development`. |
-
-You can run the backend development server executing:
-
-```bash
-$ ./gradlew backend:run
-```
-
-This will start serving the app in port 9090 by default. 
-
-### Web
-
-If you want to run the frontend development server, you can execute:
-
-```bash
-$ ./gradlew web:run
-```
-
-This will start the webpack development server in port 8080, and proxy all calls to files it doesn't know to port 9090.
-
-If you want the frontend development server to connect to the development backend, you'll need to pass the flag `-Pdebug`.
-
-```bash
-$ ./gradlew web:run -Pdebug
-```
-
-**Warning**: The webpack development server will keep running until you execute `./gradlew web:stop`.
-
-#### Hot reloading
-
-In backend, Ktor supports hot reloading, but since the task serving the app is kept alive, you need to execute in a separate console:
-
-```bash
-$ ./gradlew backend:classes -t
-```
-
-This will recompilate classes on file changes, and Ktor will detect it and reload them on the next request it serves.
-
-For the frontend, it's enough to execute the original run task with `-t` flag.
-
-```bash
-$ ./gradlew web:run -t
-```
-
-### Android
+### Android:
 
 Open the root project in Android Studio or IntelliJ, and it will recognise the Android App configuration after a
 successful Gradle sync. You can use that configuration to run, debug and profile the app.
 
-### iOS
+To install the app you can use this gradle command:
 
-Open the workspace located at [ios/KotlinMultiplatformTemplate.xcworkspace](/ios/KotlinMultiplatformTemplate.xcworkspace) 
-in XCode. The Podfile includes an entry to the common code with an extra user script for it to be recompiled as a build 
-step.
+```groovy
+./gradlew installDebug
+```
 
-## Deployment
+### iOs:
 
-### Backend
+Open the workspace located at [ios/GDGVeneziaShowcase.xcworkspace](/ios/GDGVeneziaShowcase.xcworkspace) 
+in XCode. 
 
-There is a `Procfile` that will JustWork™️ on Heroku or Herokuish environments (think [Dokku](https://github.com/dokku/dokku)).
+To build the kotlin common code for iOS run this gradle script:
 
-### Frontend
-
-By default, the web bundle and a default `index.html` are included in the backend jar and served at `/`.
-
-## Contributing
-
-If you would like to contribute code to this repository you can do so through GitHub by creating a new branch in the repository and sending a pull request or opening an issue. Please, remember that there are some requirements you have to pass before accepting your contribution:
-
-* Write clean code and test it.
-* The code written will have to match the product owner requirements.
-* Follow the repository code style.
-* Write good commit messages.
-* Do not send pull requests without checking if the project build is OK in the CI environment.
-* Review if your changes affects the repository documentation and update it.
-* Describe the PR content and don't hesitate to add comments to explain us why you've added or changed something.
+```groovy
+./gradlew iOsBinaries
+```
 
 ## License
 
-    Copyright 2019 Kotlin Multiplatform Template
+    Copyright 2019 GDG Venezia
 
     Licensed under the Apache License, Version 2.0 (the "License"); you may 
     not use this file except in compliance with the License. You may obtain a 
