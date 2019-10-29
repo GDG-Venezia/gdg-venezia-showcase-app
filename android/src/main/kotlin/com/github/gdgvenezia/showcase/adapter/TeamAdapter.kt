@@ -31,9 +31,8 @@ class TeamAdapter(var items: List<TeamMemberModel>) : RecyclerView.Adapter<TeamA
             titleText.text = "${item.firstname} ${item.lastname}"
             subtitleText.text = item.shortDescription
 
-            // TODO: add a real url
-            val testUrl =  "https://lh3.googleusercontent.com/Tw5oa9M6lcH8KhDP5f4fJtbFIjdimH8Zp50JJWWGED_V_B5kWtNiTF4EytRON2itQeLyYN9agZ6wdCPn5xYFyPxFshuB2LvCloKHo7iTROP9vDK4qxEf1XEvUpNm8KzpiAjzhTcDrxeBKmuDV3tsWKxAjh1DGuN7yogaUWPtxJZUwq-9mkjBueUiHbvAqOm5Mn6qws9GxIDPiPc3Fy9pjCF28PGSOvHhzog0M-HHUvrlUAhrWiHei1DB4S9Y326Hm1b8-hUgtJ9IMIIRa3gwtbqwLeFe1BMUI5K66xt78yxgg-pLYAYze1HMv3IfUviIVEipgq7M6UTWRcBLFzYJyqWMgRH05PmQoM9tqE-y854gk_ZcV3WN-7Dre_Y5Or_KZJgCQmdC2SuxG97s1GezQhFuNLuovTmObOsel2ctx2RF89f0fJ2QAW8RBoQnBy6vGuRwTVJc1ZQN6MMGkXO5aqsP9qWYQZ4B-vfAQmSZLgq4N7n3xeWi05M5Ym36E5WHb0FMMYArUCfDRPUDVUQK-fXTvAz64qE24g9VK5n9wlxqRru1y6nDe9qTQZWk05u56ETh-p-DeTI02R23msMZuISfgfSMsSFmuLYRPIYxDfWVfmYAai4MgQGNCltV7tqjg5XD3W8CCT2WlHq2RFFAGS67DA_-4sDq=w1870-h1862-no"
-            Glide.with(itemView.context).load(testUrl).apply(RequestOptions.circleCropTransform()).into(imageView)
+//            val testUrl =  "https://lh3.googleusercontent.com/sB_vqEkjJLRDW25oQI0jPCUbN2PTieoQ8oCmk9S2FaxZdjv12nk0kmNYM2ISiFx_yR23S-ptUGlpV5WG2Tg3-JyjGSBz9r1Pf8rZzPEZeVjjyMd5i-PShK-q20S6-1szck7PT8G-QZHCOuKSSqCgbCYGRSDZsjMe70n18I4msQdDDEz5vpoxYxiQG1RKkPwhs0bWQRPEqEBfFEcCtN36B-XTx2BlaBiB3aGcytkouNECSZQLO4z17fMS5ELEjpBBIhNIUQarwpd8K0WJqjQkN-5QYU4rokQCBsJmMEtbE1kl8HuRs_j5IH1PVjgHnRGfto28clSWk0xyohQllLFVrOl90XqUIBrCP_gHnGHJu_1xQKUKsY50pn-W6JK8jnRgpMWofT_Vq5jvEt9IrLPWgupltwRoEp2RL-JFGkK8ILrksSl7yJGuuqu5zhQ4lQz9ADu_NKemvLoAwslKmj6BiNcfwfcuou0RVEPzjiUrEV1rwJwVzrmMPeuD7gOSEROVn1Jf2Z5_e1xlE_ICHwnGJOlYup22kJYAi6EWQmeZ7074NcooJ1a39i_Eeh-KFRwX35T5FUsfsNZbpikowTEP73EIzuaeBizaYr-ryzIBGsPT6H4up-5WlLQkx3jVMKWn_qkPn3EAhV6FFW8ZUMzV4Ic7IwJOK8MFWWukdAu0RQ3JdenKW7jaa1s=w1806-h1798-no"
+            Glide.with(itemView.context).load(item.pictureUrl).apply(RequestOptions.circleCropTransform()).into(imageView)
         }
     }
 }

@@ -1,5 +1,6 @@
 package com.github.gdgvenezia.showcase
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -44,10 +45,10 @@ class AboutFragment : Fragment(), TeamView {
         teamRecyclerView.adapter = teamAdapter
     }
 
+    @SuppressLint("SetTextI18n")
     override fun renderTeam(team: List<TeamMemberModel>) {
 
-        // TODO: show real text
-        aboutText.text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        aboutText.text = "Il Google Developers Group (GDG) Venezia si propone come punto di incontro per gli appassionati di tecnologie e piattaforme Google, come Android, Firebase, Flutter, Angular, Chrome, Google Apps, Cloud Platform... ma non solo questo!"
 
         teamAdapter.items = team
         teamAdapter.notifyDataSetChanged()
