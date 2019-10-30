@@ -27,14 +27,22 @@ To install the app you can use this gradle command:
 
 ### iOs:
 
-Open the workspace located at [ios/GDGVeneziaShowcase.xcworkspace](/ios/GDGVeneziaShowcase.xcworkspace) 
-in XCode. 
-
-To build the kotlin common code for iOS run this gradle script:
+Build the kotlin common code for iOS
 
 ```groovy
 ./gradlew iOsBinaries
 ```
+Update the pods
+
+```bash
+pod update
+```
+Open the workspace located at [ios/GDGVeneziaShowcase.xcworkspace](/ios/GDGVeneziaShowcase.xcworkspace) 
+in XCode. 
+
+## Future Work:
+
+- Implement the detail screens
 
 ## License
 
