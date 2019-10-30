@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  KotlinMultiplatformTemplate
+
+  Created by Marco Gomiero on 27/10/2019.
+  Copyright © 2019 GDG Venezia. All rights reserved.
+*/
+"BOTTOM_BAR_events" = "Eventi";
+"BOTTOM_BAR_about" = "Chi siamo";
+"BOTTOM_BAR_photo" = "Foto";
+"BOTTOM_BAR_contact" = "Contatti";
+"EVENTS_next" = "Prossimi eventi";
+"EVENTS_past" = "Eventi passati";
+"ABOUT_organizers" = "Organizzatori";

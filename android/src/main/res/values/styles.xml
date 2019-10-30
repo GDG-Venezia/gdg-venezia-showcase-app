@@ -1,5 +1,27 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
-    <style name="AppTheme" parent="Theme.AppCompat.DayNight.DarkActionBar"/>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="23">true</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="BodyTitle">
+        <item name="fontFamily">@font/product_sans_bold</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="Body">
+        <item name="fontFamily">@font/product_sans_regular</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="Subtitle">
+        <item name="fontFamily">@font/product_sans_regular</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
 </resources>

@@ -1,8 +1,95 @@
 PODS:
   - common (0.0.1-SNAPSHOT)
+  - MaterialComponents/AnimationTiming (93.1.1)
+  - MaterialComponents/BottomNavigation (93.1.1):
+    - MaterialComponents/Elevation
+    - MaterialComponents/Ink
+    - MaterialComponents/Palettes
+    - MaterialComponents/private/Math
+    - MaterialComponents/Ripple
+    - MaterialComponents/ShadowElevations
+    - MaterialComponents/ShadowLayer
+    - MaterialComponents/Typography
+    - MDFInternationalization
+  - "MaterialComponents/BottomNavigation+ColorThemer (93.1.1)":
+    - MaterialComponents/BottomNavigation
+    - MaterialComponents/schemes/Color
+  - MaterialComponents/Buttons (93.1.1):
+    - MaterialComponents/Elevation
+    - MaterialComponents/Ink
+    - MaterialComponents/private/Math
+    - MaterialComponents/Ripple
+    - MaterialComponents/ShadowElevations
+    - MaterialComponents/ShadowLayer
+    - MaterialComponents/Shapes
+    - MaterialComponents/Typography
+    - MDFInternationalization
+    - MDFTextAccessibility
+  - MaterialComponents/Elevation (93.1.1):
+    - MaterialComponents/private/Color
+    - MaterialComponents/private/Math
+  - MaterialComponents/Ink (93.1.1):
+    - MaterialComponents/private/Color
+    - MaterialComponents/private/Math
+  - MaterialComponents/OverlayWindow (93.1.1):
+    - MaterialComponents/private/Application
+  - MaterialComponents/Palettes (93.1.1)
+  - MaterialComponents/private/Application (93.1.1)
+  - MaterialComponents/private/Color (93.1.1)
+  - MaterialComponents/private/KeyboardWatcher (93.1.1):
+    - MaterialComponents/private/Application
+  - MaterialComponents/private/Math (93.1.1)
+  - MaterialComponents/private/Overlay (93.1.1)
+  - MaterialComponents/Ripple (93.1.1):
+    - MaterialComponents/AnimationTiming
+    - MaterialComponents/private/Color
+    - MaterialComponents/private/Math
+  - MaterialComponents/schemes/Color (93.1.1):
+    - MaterialComponents/private/Color
+  - MaterialComponents/ShadowElevations (93.1.1)
+  - MaterialComponents/ShadowLayer (93.1.1):
+    - MaterialComponents/ShadowElevations
+  - MaterialComponents/Shapes (93.1.1):
+    - MaterialComponents/private/Color
+    - MaterialComponents/private/Math
+    - MaterialComponents/ShadowLayer
+  - MaterialComponents/Snackbar (93.1.1):
+    - MaterialComponents/AnimationTiming
+    - MaterialComponents/Buttons
+    - MaterialComponents/Elevation
+    - MaterialComponents/OverlayWindow
+    - MaterialComponents/private/Application
+    - MaterialComponents/private/KeyboardWatcher
+    - MaterialComponents/private/Math
+    - MaterialComponents/private/Overlay
+    - MaterialComponents/ShadowElevations
+    - MaterialComponents/ShadowLayer
+    - MaterialComponents/Typography
+  - MaterialComponents/Typography (93.1.1):
+    - MaterialComponents/private/Application
+    - MaterialComponents/private/Math
+  - MBProgressHUD (1.1.0)
+  - MDFInternationalization (2.0.0)
+  - MDFTextAccessibility (2.0.0)
+  - SDWebImage (5.2.5):
+    - SDWebImage/Core (= 5.2.5)
+  - SDWebImage/Core (5.2.5)
 
 DEPENDENCIES:
   - common (from `../common`)
+  - MaterialComponents/BottomNavigation
+  - "MaterialComponents/BottomNavigation+ColorThemer"
+  - MaterialComponents/Snackbar
+  - MBProgressHUD
+  - SDWebImage
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - MaterialComponents
+    - MBProgressHUD
+    - MDFInternationalization
+    - MDFTextAccessibility
+    - SDWebImage
 
 EXTERNAL SOURCES:
   common:
@@ -10,7 +97,12 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   common: 4fda328450e367efe4f72293455d734624dfe583
+  MaterialComponents: 995a697f3fc57f540ad93f2d904307147cf2e65a
+  MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
+  MDFInternationalization: 010097556d6b09d2c4ea38e0820ea6d37be6a314
+  MDFTextAccessibility: 85c09a1bd9c321f494348e632a25063bcda35a53
+  SDWebImage: 4eabf2fa6695c95c47724214417a9c036c965e4a
 
-PODFILE CHECKSUM: ecfdcc875de10f58e1b746276b04d39e262949a6
+PODFILE CHECKSUM: 6efd865a6af7d6a0ae9acc3ca935e1bbe2daa138
 
-COCOAPODS: 1.7.5
+COCOAPODS: 1.6.1

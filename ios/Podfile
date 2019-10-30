@@ -1,5 +1,14 @@
 platform :ios, '12.1'
 
-target 'KotlinMultiplatformTemplate' do
+# Pods for iosApp
+pod 'MaterialComponents/BottomNavigation'
+pod 'MaterialComponents/BottomNavigation+ColorThemer'
+pod 'MBProgressHUD'
+pod 'MaterialComponents/Snackbar'
+
+use_frameworks!
+pod 'SDWebImage'
+
+target 'GDGVeneziaShowcase' do
     pod 'common', :path => '../common'
 end

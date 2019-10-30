@@ -29,7 +29,9 @@ object Libs {
     const val cardview = "androidx.cardview:cardview:1.0.0"
     const val recyclerview = "androidx.recyclerview:recyclerview:1.0.0"
     const val material = "com.google.android.material:material:1.0.0"
-    const val constraintlayout = "com.android.support.constraint:constraint-layout:1.1.3"
+    const val constraintlayout = "androidx.constraintlayout:constraintlayout:1.1.3"
+    const val glide = "com.github.bumptech.glide:glide:4.9.0"
+    const val glideProcessor = "com.github.bumptech.glide:compiler:4.9.0"
 
     const val ehcache = "org.ehcache:ehcache:${Versions.ehcache}"
     const val fuel = "com.github.kittinunf.fuel:fuel:${Versions.fuel}"
@@ -93,6 +95,7 @@ object Libs {
     const val ktorClientAndroid = "io.ktor:ktor-client-android:${Versions.ktor}"
     const val ktorClientIos = "io.ktor:ktor-client-ios:${Versions.ktor}"
     const val ktorClientJs = "io.ktor:ktor-client-js:${Versions.ktor}"
+    const val ktorClientApache = "io.ktor:ktor-client-apache:${Versions.ktor}"
     const val ktorClientLogging = "io.ktor:ktor-client-logging:${Versions.ktor}"
     const val ktorClientLoggingJvm = "io.ktor:ktor-client-logging-jvm:${Versions.ktor}"
     const val ktorClientLoggingJs = "io.ktor:ktor-client-logging-js:${Versions.ktor}"
@@ -108,4 +111,7 @@ object Libs {
     const val logbackClassic = "ch.qos.logback:logback-classic:${Versions.logback}"
     const val mockitoKotlin = "com.nhaarman.mockitokotlin2:mockito-kotlin:${Versions.mockitoKotlin}"
     const val squashH2 = "org.jetbrains.squash:squash-h2:${Versions.squash}"
+
+    const val androidFragmentTesting = "androidx.fragment:fragment-testing:1.1.0"
+    const val androidTestRunner = "androidx.test:runner:1.1.0"
 }

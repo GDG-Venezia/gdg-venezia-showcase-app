@@ -73,6 +73,7 @@ kotlin {
                 api Libs.junit
                 api Libs.kotlinTestJunit
                 api Libs.kotlinTest
+                api Libs.ktorClientApache
             }
         }
 
@@ -119,8 +120,8 @@ configurations {
 }
 
 xcode {
-    projectPath = "../ios/KotlinMultiplatformTemplate.xcodeproj"
-    target = "KotlinMultiplatformTemplate"
+    projectPath = "../ios/GDGVeneziaShowcase.xcodeproj"
+    target = "GDGVeneziaShowcase"
 }
 
 detekt {
