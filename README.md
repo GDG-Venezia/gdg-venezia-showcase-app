@@ -8,7 +8,7 @@ This is a simple showcase application for the GDG Venezia built using Kotlin Mul
 
 The application has been developed for the [Kotlin/Everywhere Venice Event](https://www.meetup.com/it-IT/GDG-Venezia/events/265665209/) 
 
-The slide of the event will be available soon.
+The slide of the event are available on [SpeakerDeck](http://bit.ly/gdgvenezia-kmp-slide)
 
 There is also a backend for this application and guess what, it's written in Kotlin. The source code is available on [Github](https://github.com/GDG-Venezia/gdg-venezia-showcase-app-backend)
 
